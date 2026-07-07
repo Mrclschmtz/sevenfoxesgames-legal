@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- SevenFoxes Games – Geo-Fuchs mit integrierter „7" -->
+  <polygon points="60,14 22,30 16,64 34,58 60,102 86,58 104,64 98,30" fill="#E8722A"/>
+  <polygon points="22,30 16,64 34,58" fill="#B84E14"/>
+  <polygon points="98,30 104,64 86,58" fill="#B84E14"/>
+  <polygon points="60,102 42,62 78,62" fill="#FFF4EA"/>
+  <polygon points="47,44 55,52 43,54" fill="#12141C"/>
+  <polygon points="73,44 65,52 77,54" fill="#12141C"/>
+  <path d="M51 65 H70 V71 L61 89 H55 L63 71 H51 Z" fill="#12141C"/>
+</svg>
