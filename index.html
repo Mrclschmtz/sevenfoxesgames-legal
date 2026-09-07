@@ -13,7 +13,11 @@
          max-width: 640px; margin: 0 auto; padding: 48px 20px 60px;
          line-height: 1.65; background: #0a0b10; color: #e8eaf2; text-align: center; }
   a { color: #E8722A; }
-  .logo { width: 130px; height: 130px; }
+  /* Das Logo hat schwarze Konturen und Augen — auf dem dunklen Grund wuerden
+     sie verschwinden. Helle Kachel aus der Logo-Palette haelt die Zeichnung lesbar. */
+  .logo { width: 108px; height: 108px; display: block; margin: 0 auto; }
+  .logo-tile { display: inline-block; background: #F6EDE4; border-radius: 26px;
+               padding: 13px; line-height: 0; box-shadow: 0 6px 24px rgba(0,0,0,.45); }
   .brand { font-size: 1.9em; font-weight: 800; letter-spacing: 4px; margin: 18px 0 0; }
   .brand span { color: #E8722A; }
   .sub { font-size: .85em; font-weight: 600; letter-spacing: 7px; color: #9aa0b0; margin: 2px 0 10px; }
@@ -34,7 +38,7 @@
 </head>
 <body>
 
-<img class="logo" src="assets/logo-mark.svg" alt="" width="130" height="130">
+<span class="logo-tile"><img class="logo" src="assets/logo-mark.svg" alt="" width="108" height="108"></span>
 
 <p class="brand">SEVEN<span>FOXES</span></p>
 <p class="sub">GAMES</p>
