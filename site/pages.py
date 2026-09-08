@@ -16,7 +16,7 @@ MAIL = "kontakt@sevenfoxes.de"
 PHONE = None          # z. B. "+49 30 1234567" (die Zweitrufnummer, die auch im DSA-Datensatz steht)
 PHONE_LINK = None     # dieselbe Nummer ohne Leerzeichen, z. B. "+49301234567"
 VAT_ID = None         # Umsatzsteuer-Identifikationsnummer nach § 27a UStG, falls vorhanden
-SMALL_BUSINESS = None # True, wenn Kleinunternehmer nach § 19 UStG (dann Hinweis statt USt-IdNr.)
+SMALL_BUSINESS = True # Kleinunternehmer nach § 19 UStG (bestaetigt 2026-09-08), keine USt-IdNr.
 
 
 # ---------- Bausteine ----------
