@@ -156,19 +156,17 @@ T = {
     "imprint_desc": "Anbieterkennzeichnung von SevenFoxes Games, Inhaber Marcel Krause.",
     # Impressum – Feldbezeichnungen (§ 5 DDG)
     "imp_provider": "Anbieter",
-    "imp_form": "Rechtsform",
-    "imp_form_value": "Einzelunternehmen (Kleingewerbe)",
-    "imp_owner": "Inhaber",
+    "imp_trading_as": "handelnd unter",
     "imp_address": "Anschrift",
+    "imp_contact": "Kontakt",
     "imp_phone": "Telefon",
     "imp_vat": "Umsatzsteuer",
-    "imp_vat_small": "Kleinunternehmer gemäß § 19 UStG – es wird keine Umsatzsteuer ausgewiesen.",
-    "imp_responsible": "Verantwortlich für den Inhalt",
-    "imp_responsible_note": "nach § 18 Abs. 2 MStV, Anschrift wie oben",
+    "imp_vat_small": "Aufgrund der Kleinunternehmerregelung gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen.",
+    "imp_vat_id": "Umsatzsteuer-Identifikationsnummer",
+    "imp_w_id": "Wirtschafts-Identifikationsnummer",
     "imprint_sections": [
-        ("Streitbeilegung", "<p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).</p>"),
-        ("Haftung für Links", "<p>Diese Website verlinkt auf externe Angebote, etwa den App Store von Apple. Für deren Inhalte sind die jeweiligen Anbieter verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar.</p>"),
-        ("Marken", "<p>Apple, App Store, iPhone und iPad sind Marken der Apple Inc. Quizerra, Quizerra Kids und SevenFoxes Games sind Kennzeichen von Marcel Krause. Alle Inhalte dieser Website, insbesondere Texte, Grafiken und die Fragenkataloge der Apps, sind urheberrechtlich geschützt.</p>"),
+        ("Streitbeilegung", "<p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>"),
+        ("Marken und Urheberrecht", "<p>Apple, App Store, iPhone und iPad sind Marken der Apple Inc. Quizerra, Quizerra Kids und SevenFoxes Games sind Kennzeichen von Marcel Krause. Die Inhalte dieser Website, insbesondere Texte, Grafiken und die Fragenkataloge der Apps, sind urheberrechtlich geschützt.</p>"),
     ],
 
     # Datenschutz (Website)

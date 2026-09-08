@@ -16,6 +16,7 @@ MAIL = "kontakt@sevenfoxes.de"
 PHONE = "+49 1575 6548598"   # Geschaeftsrufnummer SevenFoxes Games (auch im DSA-Datensatz)
 PHONE_LINK = "+4915756548598"
 VAT_ID = None         # Umsatzsteuer-Identifikationsnummer nach § 27a UStG, falls vorhanden
+W_ID = None           # Wirtschafts-Identifikationsnummer nach § 139c AO (BZSt vergibt sie seit 11/2024 stufenweise), falls vorhanden
 SMALL_BUSINESS = True # Kleinunternehmer nach § 19 UStG (bestaetigt 2026-09-08), keine USt-IdNr.
 
 
@@ -358,20 +359,25 @@ def page_imprint(t, lang, url):
     """Impressum nach § 5 DDG: Pflichtangaben als beschriftete Liste, damit jede
     Angabe eindeutig zuzuordnen ist. Telefon und Umsatzsteuer-Angaben erscheinen
     nur, wenn sie oben in den Konstanten gesetzt sind (keine Platzhalter live)."""
-    rows = [
-        (t["imp_provider"], "SevenFoxes Games"),
-        (t["imp_form"], t["imp_form_value"]),
-        (t["imp_owner"], "Marcel Krause"),
-        (t["imp_address"], f"c/o Autorenglück #39534<br>Albert-Einstein-Str. 47<br>02977 Hoyerswerda<br>{t['country']}"),
-        (t["email_label"], f'<a href="mailto:{MAIL}">{MAIL}</a>'),
-    ]
+    # Diensteanbieter ist bei einem Einzelunternehmen die natürliche Person;
+    # „SevenFoxes Games" ist nur die Geschäftsbezeichnung (keine Rechtsform-Zeile,
+    # kein separater „Inhaber" – das erweckte den Eindruck einer Gesellschaft).
+    contact = f'{t["email_label"]}: <a href="mailto:{MAIL}">{MAIL}</a>'
     if PHONE:
-        rows.append((t["imp_phone"], f'<a href="tel:{PHONE_LINK}">{PHONE}</a>'))
+        contact += f'<br>{t["imp_phone"]}: <a href="tel:{PHONE_LINK}">{PHONE}</a>'
+    rows = [
+        (t["imp_provider"], f"Marcel Krause<br>{t['imp_trading_as']} SevenFoxes Games"),
+        (t["imp_address"], f"c/o Autorenglück #39534<br>Albert-Einstein-Str. 47<br>02977 Hoyerswerda<br>{t['country']}"),
+        (t["imp_contact"], contact),
+    ]
+    # § 5 Abs. 1 Nr. 6 DDG: USt-IdNr. ODER Wirtschafts-Identifikationsnummer sind
+    # Pflicht, sobald vorhanden. Der Kleinunternehmer-Hinweis ist freiwillig.
     if VAT_ID:
-        rows.append((t["imp_vat"], VAT_ID))
-    elif SMALL_BUSINESS:
+        rows.append((t["imp_vat_id"], VAT_ID))
+    if W_ID:
+        rows.append((t["imp_w_id"], W_ID))
+    if SMALL_BUSINESS and not VAT_ID:
         rows.append((t["imp_vat"], t["imp_vat_small"]))
-    rows.append((t["imp_responsible"], f"Marcel Krause<br><span class=\"muted\">{t['imp_responsible_note']}</span>"))
     dl = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in rows)
     sections = "".join(f"<h2>{h}</h2>{b}" for h, b in t["imprint_sections"])
     content = f'''

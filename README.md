@@ -39,5 +39,5 @@ muss der Server im Repo-Wurzelverzeichnis laufen.
 
 Die Pflichtangaben stehen in `site/pages.py` (`page_imprint`) und
 `site/i18n/*.py`. Telefonnummer und Umsatzsteuer-Angaben werden nur gerendert,
-wenn die Konstanten `PHONE`, `VAT_ID` bzw. `SMALL_BUSINESS` oben in
+wenn die Konstanten `PHONE`, `VAT_ID`, `W_ID` bzw. `SMALL_BUSINESS` oben in
 `site/pages.py` gesetzt sind.
