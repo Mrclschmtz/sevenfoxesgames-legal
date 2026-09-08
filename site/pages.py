@@ -13,8 +13,8 @@ MAIL = "kontakt@sevenfoxes.de"
 
 # Impressum-Angaben, die nur Marcel liefern kann. Solange None, wird die Zeile
 # NICHT gerendert – lieber eine fehlende Zeile als ein Platzhalter auf der Live-Seite.
-PHONE = None          # z. B. "+49 30 1234567" (die Zweitrufnummer, die auch im DSA-Datensatz steht)
-PHONE_LINK = None     # dieselbe Nummer ohne Leerzeichen, z. B. "+49301234567"
+PHONE = "+49 1575 6548598"   # Geschaeftsrufnummer SevenFoxes Games (auch im DSA-Datensatz)
+PHONE_LINK = "+4915756548598"
 VAT_ID = None         # Umsatzsteuer-Identifikationsnummer nach § 27a UStG, falls vorhanden
 SMALL_BUSINESS = True # Kleinunternehmer nach § 19 UStG (bestaetigt 2026-09-08), keine USt-IdNr.
 
