@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6EDE4">
+<link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/Sora[wght].ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-world="{{world}}" class="{{bodyclass}}">
+<a class="skip" href="#main">{{skip}}</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{home}}" aria-label="{{brand_alt}}">
+      <span class="brand-tile"><img src="/assets/logo-mark.svg" alt="" width="36" height="36"></span>
+      <span class="brand-word">SEVEN<b>FOXES</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation">
+      {{nav}}
+    </nav>
+    <div class="lang" aria-label="Sprache · Language · Idioma">{{langswitch}}</div>
+  </div>
+</header>
+
+<main id="main">
+{{content}}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-brand">
+      <span class="brand-word">SEVEN<b>FOXES</b> <span class="games">GAMES</span></span>
+      <p class="foot-claim">{{footer_claim}}</p>
+    </div>
+    <nav class="foot-links" aria-label="Rechtliches · Legal">
+        {{footer}}
+    </nav>
+    <p class="foot-copy"><span class="c">©</span> 2026 SevenFoxes Games · Marcel Krause</p>
+  </div>
+</footer>
+</body>
+</html>
