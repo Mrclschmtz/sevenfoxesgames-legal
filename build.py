@@ -10,7 +10,7 @@ Die generierten Dateien werden mit eingecheckt – Pages baut nichts selbst
 (.nojekyll), es gibt also keinen Build-Schritt auf GitHub-Seite.
 
 Sprachen: Deutsch liegt in der Wurzel, Englisch unter /en/, Spanisch unter /es/.
-Die Datenschutz-URLs /quizerra/ und /quizerra-kids/ sind in der veröffentlichten
+Die Datenschutz-URLs /quizerra/, /quizerra-kids/ und /bumblossom/ sind in der veröffentlichten
 App, in App Store Connect und bei AdMob hinterlegt und dürfen sich NICHT ändern.
 """
 import importlib
@@ -40,8 +40,9 @@ SLUGS = {
     # kanonisch bleibt die Wurzel-URL.
     "legal-quizerra": {"de": "quizerra/",      "en": "en/quizerra/",       "es": "es/quizerra/"},
     "legal-kids":     {"de": "quizerra-kids/", "en": "en/quizerra-kids/",  "es": "es/quizerra-kids/"},
+    "legal-bumblossom": {"de": "bumblossom/",  "en": "en/bumblossom/",     "es": "es/bumblossom/"},
 }
-CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de"}
+CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
 
 
 def url(key, lang):
@@ -88,6 +89,7 @@ def footer_html(t, lang):
         ("privacy", t["nav_privacy_site"]),
         ("legal-quizerra", t["nav_privacy_quizerra"]),
         ("legal-kids", t["nav_privacy_kids"]),
+        ("legal-bumblossom", t["nav_privacy_bumblossom"]),
     ]
     links = []
     for key, label in legal:

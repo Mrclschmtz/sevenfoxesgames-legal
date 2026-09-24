@@ -111,6 +111,27 @@ def panel_kids(t, lang, url):
 </article>'''
 
 
+def panel_bumblossom(t, lang, url):
+    return f'''
+<article class="world-panel" data-world="garden" aria-labelledby="p-bumblossom">
+  <div class="panel-copy">
+    <div class="app-name"><img src="/assets/img/bumblossom/icon.png" alt="" width="64" height="64">
+      <h3 id="p-bumblossom"><span class="display">BUMB<b>LOSSOM</b></span></h3></div>
+    <p class="app-sub">{t["b_subtitle"]}</p>
+    <p>{t["b_teaser"]}</p>
+    {facts(t["b_facts"])}
+    <div class="actions">{soon_badge(t)}
+      <a class="btn btn-ghost" href="{url("legal-bumblossom", lang)}#{lang}">{t["b_privacy_link"]}</a></div>
+  </div>
+  <div class="panel-art">
+    <img class="device" src="/assets/img/bumblossom/hero-device.jpg" alt="{t["b_shot_alt"]}" width="560" height="1127" loading="lazy">
+    <img class="bee" src="/assets/img/bumblossom/bee_y.png" alt="" loading="lazy">
+    <img class="sticker" src="/assets/img/bumblossom/flower_r.png" alt="" style="right:-2%;top:8%;transform:rotate(14deg)" loading="lazy">
+    <img class="sticker" src="/assets/img/bumblossom/flower_b.png" alt="" style="right:6%;bottom:6%;width:16%;transform:rotate(-10deg)" loading="lazy">
+  </div>
+</article>'''
+
+
 def gallery(app, lang, names, alts):
     imgs = "".join(
         f'<img src="/assets/img/{app}/{lang}/{n}.jpg" alt="{a}" width="230" height="500" loading="lazy">'
@@ -156,6 +177,7 @@ def page_home(t, lang, url):
   </div>
   {panel_quizerra(t, lang, url)}
   {panel_kids(t, lang, url)}
+  {panel_bumblossom(t, lang, url)}
 </section>
 <div class="wrap">{pixels("home-2")}</div>
 
@@ -180,6 +202,7 @@ def page_apps(t, lang, url):
   </div>
   {panel_quizerra(t, lang, url)}
   {panel_kids(t, lang, url)}
+  {panel_bumblossom(t, lang, url)}
 </section>'''
     return dict(title=t["apps_page_title"], description=t["apps_lead"], world="studio", content=content)
 
@@ -405,9 +428,11 @@ def page_privacy(t, lang, url):
 
 def page_legal(app, t, lang, url):
     body = (HERE / "legal" / f"{app}.html").read_text()
-    word = quizerra_word() if app == "quizerra" else kids_word()
-    title = t["legal_q_title"] if app == "quizerra" else t["legal_k_title"]
-    desc = t["legal_q_desc"] if app == "quizerra" else t["legal_k_desc"]
+    word, title, desc = {
+        "quizerra": (quizerra_word(), t["legal_q_title"], t["legal_q_desc"]),
+        "quizerra-kids": (kids_word(), t["legal_k_title"], t["legal_k_desc"]),
+        "bumblossom": ('<span class="display">BUMBLOSSOM</span>', t["legal_b_title"], t["legal_b_desc"]),
+    }[app]
     content = f'''
 <section class="section wrap legal">
   <p class="brand-line">{word}</p>
@@ -436,4 +461,6 @@ def render(key, lang, t, url):
         return page_legal("quizerra", t, lang, url)
     if key == "legal-kids":
         return page_legal("quizerra-kids", t, lang, url)
+    if key == "legal-bumblossom":
+        return page_legal("bumblossom", t, lang, url)
     raise KeyError(key)

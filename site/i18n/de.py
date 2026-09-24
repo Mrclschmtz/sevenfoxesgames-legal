@@ -8,6 +8,7 @@ T = {
     "nav_privacy_site": "Datenschutz (Website)",
     "nav_privacy_quizerra": "Datenschutz Quizerra",
     "nav_privacy_kids": "Datenschutz Quizerra Kids",
+    "nav_privacy_bumblossom": "Datenschutz Bumblossom",
     "footer_claim": "Unabhängiges Spielestudio aus Deutschland. Quizspiele für iPhone und iPad.",
     "owner_label": "Inhaber",
     "email_label": "E-Mail",
@@ -90,6 +91,11 @@ T = {
     # Quizerra Kids
     "k_page_title": "Quizerra Kids – Quiz & Stickerheft für Kinder",
     "k_desc": "Quizerra Kids ist ein werbefreies Quizspiel für Kinder von 6 bis 12 Jahren: 800 kindgerechte Fragen in zwei Altersstufen, ein Stickerheft zum Sammeln, Vorlese-Funktion, kein Tracking, Käufe nur hinter einer Elternsicherung.",
+    "b_subtitle": "Bienen-Puzzle voller Blüten",
+    "b_teaser": "Schick fleißige Bienen aus ihren Stöcken los und lass Knospe für Knospe ein Bild erblühen. Jedes fertige Motiv wandert gepresst ins Herbarium – 150 Beete in 15 Gärten, jeder mit eigener Musik.",
+    "b_facts": ["150 Beete", "15 Gärten", "Herbarium", "Spielbar offline"],
+    "b_shot_alt": "Bumblossom: Bienen umkreisen ein Beet, eine Tulpe erblüht",
+    "b_privacy_link": "Datenschutz",
     "k_subtitle": "Quiz & Stickerheft für Kinder",
     "k_teaser": "Ella, die neugierige Eule, stellt 800 kindgerechte Fragen in zwei Altersstufen. Für richtige Antworten gibt es Sticker fürs Album – ganz ohne Werbung und Tracking.",
     "k_lead": "Ella, die neugierige Eule, freut sich auf dich! 800 kindgerecht formulierte Fragen, ein Stickerheft zum Sammeln – und nichts, was Eltern beunruhigen müsste.",
@@ -197,4 +203,6 @@ T = {
     "legal_q_desc": "Datenschutzerklärung und Impressum der iOS-App Quizerra – Deutsch, English, Español.",
     "legal_k_title": "Quizerra Kids – Datenschutzerklärung & Impressum",
     "legal_k_desc": "Datenschutzerklärung und Impressum der iOS-App Quizerra Kids – Deutsch, English, Español.",
+    "legal_b_title": "Bumblossom – Datenschutzerklärung & Impressum",
+    "legal_b_desc": "Datenschutzerklärung und Impressum der iOS-App Bumblossom – Deutsch, English, Español.",
 }

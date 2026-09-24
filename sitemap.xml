@@ -138,4 +138,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/quizerra-kids/"/>
   </url>
+  <url>
+    <loc>https://sevenfoxes.de/bumblossom/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/bumblossom/"/>
+  </url>
 </urlset>

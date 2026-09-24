@@ -7,6 +7,7 @@ T = {
     "nav_privacy_site": "Privacidad (sitio web)",
     "nav_privacy_quizerra": "Privacidad – Quizerra",
     "nav_privacy_kids": "Privacidad – Quizerra Kids",
+    "nav_privacy_bumblossom": "Privacidad – Bumblossom",
     "footer_claim": "Estudio de juegos independiente de Alemania. Juegos de preguntas para iPhone y iPad.",
     "owner_label": "Titular",
     "email_label": "Correo electrónico",
@@ -85,6 +86,11 @@ T = {
 
     "k_page_title": "Quizerra Kids – quiz y álbum de pegatinas para niños",
     "k_desc": "Quizerra Kids es un juego de preguntas sin publicidad para niños de 6 a 12 años: 800 preguntas adaptadas en dos niveles de edad, un álbum de pegatinas, lectura en voz alta, sin rastreo y compras solo tras un control parental.",
+    "b_subtitle": "Un puzle de abejas lleno de flores",
+    "b_teaser": "Envía abejas trabajadoras desde sus colmenas y mira cómo florece una imagen, capullo a capullo. Cada motivo terminado se prensa en tu herbario: 150 bancales en 15 jardines, cada uno con su propia música.",
+    "b_facts": ["150 bancales", "15 jardines", "Herbario", "Sin conexión"],
+    "b_shot_alt": "Bumblossom: abejas rodean un bancal mientras florece un tulipán",
+    "b_privacy_link": "Privacidad",
     "k_subtitle": "Quiz y álbum de pegatinas",
     "k_teaser": "Ella, la búho curiosa, plantea 800 preguntas adaptadas en dos niveles de edad. Los aciertos dan pegatinas para el álbum, sin publicidad y sin rastreo.",
     "k_lead": "¡Ella, la búho curiosa, tiene muchas ganas de conocerte! 800 preguntas pensadas para niños, un álbum de pegatinas para coleccionar, y nada que deba preocupar a madres y padres.",
@@ -187,4 +193,6 @@ T = {
     "legal_q_desc": "Política de privacidad y aviso legal de la app para iOS Quizerra – Deutsch, English, Español.",
     "legal_k_title": "Quizerra Kids – política de privacidad y aviso legal",
     "legal_k_desc": "Política de privacidad y aviso legal de la app para iOS Quizerra Kids – Deutsch, English, Español.",
+    "legal_b_title": "Bumblossom – política de privacidad y aviso legal",
+    "legal_b_desc": "Política de privacidad y aviso legal de la app para iOS Bumblossom – Deutsch, English, Español.",
 }

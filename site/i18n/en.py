@@ -7,6 +7,7 @@ T = {
     "nav_privacy_site": "Privacy (website)",
     "nav_privacy_quizerra": "Privacy – Quizerra",
     "nav_privacy_kids": "Privacy – Quizerra Kids",
+    "nav_privacy_bumblossom": "Privacy – Bumblossom",
     "footer_claim": "Independent game studio from Germany. Quiz games for iPhone and iPad.",
     "owner_label": "Owner",
     "email_label": "Email",
@@ -85,6 +86,11 @@ T = {
 
     "k_page_title": "Quizerra Kids – quiz & sticker book for kids",
     "k_desc": "Quizerra Kids is an ad-free quiz game for children aged 6 to 12: 800 kid-friendly questions across two age levels, a sticker book to collect, read-aloud, no tracking, purchases only behind a parental gate.",
+    "b_subtitle": "A bee puzzle full of blossoms",
+    "b_teaser": "Send busy bees out of their hives and watch a picture bloom, bud by bud. Every finished motif is pressed into your herbarium – 150 beds across 15 gardens, each with its own music.",
+    "b_facts": ["150 beds", "15 gardens", "Herbarium", "Plays offline"],
+    "b_shot_alt": "Bumblossom: bees circle a flower bed while a tulip blooms",
+    "b_privacy_link": "Privacy",
     "k_subtitle": "Quiz & sticker book for kids",
     "k_teaser": "Ella the curious owl asks 800 kid-friendly questions across two age levels. Correct answers earn stickers for the album – with no ads and no tracking.",
     "k_lead": "Ella the curious owl can't wait to meet you! 800 kid-friendly questions, a sticker book to collect – and nothing that should worry parents.",
@@ -187,4 +193,6 @@ T = {
     "legal_q_desc": "Privacy policy and legal notice of the iOS app Quizerra – Deutsch, English, Español.",
     "legal_k_title": "Quizerra Kids – privacy policy & legal notice",
     "legal_k_desc": "Privacy policy and legal notice of the iOS app Quizerra Kids – Deutsch, English, Español.",
+    "legal_b_title": "Bumblossom – privacy policy & legal notice",
+    "legal_b_desc": "Privacy policy and legal notice of the iOS app Bumblossom – Deutsch, English, Español.",
 }
