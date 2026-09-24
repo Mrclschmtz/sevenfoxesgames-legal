@@ -44,7 +44,7 @@ T = {
 
     "apps_page_title": "Apps – SevenFoxes Games",
     "apps_title": "Nuestras apps",
-    "apps_lead": "Un trivial contrarreloj para adultos, un quiz sin publicidad con álbum de pegatinas para niños y un puzle de abejas en el que florecen 150 bancales.",
+    "apps_lead": "Un trivial contrarreloj para adultos, un quiz sin publicidad con álbum de pegatinas para niños y un puzle de abejas en el que florecen 400 bancales.",
 
     "q_page_title": "Quizerra – trivial contrarreloj",
     "q_desc": "Quizerra es un juego de preguntas rápido para iPhone y iPad: 1.100 preguntas en 11 categorías, dos minutos por ronda, reto diario y 55 emblemas por coleccionar. Gratis, en español, alemán e inglés.",
@@ -87,9 +87,9 @@ T = {
     "k_page_title": "Quizerra Kids – quiz y álbum de pegatinas para niños",
     "k_desc": "Quizerra Kids es un juego de preguntas sin publicidad para niños de 6 a 12 años: 800 preguntas adaptadas en dos niveles de edad, un álbum de pegatinas, lectura en voz alta, sin rastreo y compras solo tras un control parental.",
     "b_subtitle": "Un puzle de abejas lleno de flores",
-    "b_teaser": "Envía abejas trabajadoras desde sus colmenas y mira cómo florece una imagen, capullo a capullo. Cada motivo terminado se prensa en tu herbario: 150 bancales en 15 jardines, cada uno con su propia música.",
-    "b_facts": ["150 bancales", "15 jardines", "Herbario", "Sin conexión"],
-    "b_shot_alt": "Bumblossom: abejas rodean un bancal mientras florece un tulipán",
+    "b_teaser": "Envía abejas trabajadoras desde sus colmenas y mira cómo florece una imagen, capullo a capullo. Cada motivo terminado se prensa en tu herbario: 400 bancales en 40 jardines, cada uno con su propio aspecto y su propia música.",
+    "b_facts": ["400 bancales", "40 jardines", "Herbario", "Sin conexión"],
+    "b_shot_alt": "Bumblossom: abejas en burbujas de aire rodean un bancal en el jardín submarino mientras florece un pez payaso",
     "b_privacy_link": "Privacidad",
     "k_subtitle": "Quiz y álbum de pegatinas",
     "k_teaser": "Ella, la búho curiosa, plantea 800 preguntas adaptadas en dos niveles de edad. Los aciertos dan pegatinas para el álbum, sin publicidad y sin rastreo.",

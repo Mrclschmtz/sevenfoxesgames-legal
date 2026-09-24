@@ -47,7 +47,7 @@ T = {
     # Apps-Übersicht
     "apps_page_title": "Apps – SevenFoxes Games",
     "apps_title": "Unsere Apps",
-    "apps_lead": "Ein Wissensquiz gegen die Zeit für Erwachsene, ein werbefreies Quiz mit Stickerheft für Kinder und ein Bienen-Puzzle, in dem 150 Beete erblühen.",
+    "apps_lead": "Ein Wissensquiz gegen die Zeit für Erwachsene, ein werbefreies Quiz mit Stickerheft für Kinder und ein Bienen-Puzzle, in dem 400 Beete erblühen.",
 
     # Quizerra
     "q_page_title": "Quizerra – Wissensquiz gegen die Zeit",
@@ -92,9 +92,9 @@ T = {
     "k_page_title": "Quizerra Kids – Quiz & Stickerheft für Kinder",
     "k_desc": "Quizerra Kids ist ein werbefreies Quizspiel für Kinder von 6 bis 12 Jahren: 800 kindgerechte Fragen in zwei Altersstufen, ein Stickerheft zum Sammeln, Vorlese-Funktion, kein Tracking, Käufe nur hinter einer Elternsicherung.",
     "b_subtitle": "Bienen-Puzzle voller Blüten",
-    "b_teaser": "Schick fleißige Bienen aus ihren Stöcken los und lass Knospe für Knospe ein Bild erblühen. Jedes fertige Motiv wandert gepresst ins Herbarium – 150 Beete in 15 Gärten, jeder mit eigener Musik.",
-    "b_facts": ["150 Beete", "15 Gärten", "Herbarium", "Spielbar offline"],
-    "b_shot_alt": "Bumblossom: Bienen umkreisen ein Beet, eine Tulpe erblüht",
+    "b_teaser": "Schick fleißige Bienen aus ihren Stöcken los und lass Knospe für Knospe ein Bild erblühen. Jedes fertige Motiv wandert gepresst ins Herbarium – 400 Beete in 40 Gärten, jeder mit eigenem Look und eigener Musik.",
+    "b_facts": ["400 Beete", "40 Gärten", "Herbarium", "Spielbar offline"],
+    "b_shot_alt": "Bumblossom: Bienen fliegen in Luftblasen um ein Beet im Unterwassergarten, ein Clownfisch erblüht",
     "b_privacy_link": "Datenschutz",
     "k_subtitle": "Quiz & Stickerheft für Kinder",
     "k_teaser": "Ella, die neugierige Eule, stellt 800 kindgerechte Fragen in zwei Altersstufen. Für richtige Antworten gibt es Sticker fürs Album – ganz ohne Werbung und Tracking.",

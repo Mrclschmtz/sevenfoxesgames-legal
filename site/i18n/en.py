@@ -44,7 +44,7 @@ T = {
 
     "apps_page_title": "Apps – SevenFoxes Games",
     "apps_title": "Our apps",
-    "apps_lead": "A trivia game against the clock for grown-ups, an ad-free quiz with a sticker book for children, and a bee puzzle in which 150 flower beds come into bloom.",
+    "apps_lead": "A trivia game against the clock for grown-ups, an ad-free quiz with a sticker book for children, and a bee puzzle in which 400 flower beds come into bloom.",
 
     "q_page_title": "Quizerra – trivia against the clock",
     "q_desc": "Quizerra is a fast-paced trivia game for iPhone and iPad: 1,100 questions across 11 categories, two minutes per round, a daily challenge and 55 emblems to collect. Free, in English, German and Spanish.",
@@ -87,9 +87,9 @@ T = {
     "k_page_title": "Quizerra Kids – quiz & sticker book for kids",
     "k_desc": "Quizerra Kids is an ad-free quiz game for children aged 6 to 12: 800 kid-friendly questions across two age levels, a sticker book to collect, read-aloud, no tracking, purchases only behind a parental gate.",
     "b_subtitle": "A bee puzzle full of blossoms",
-    "b_teaser": "Send busy bees out of their hives and watch a picture bloom, bud by bud. Every finished motif is pressed into your herbarium – 150 beds across 15 gardens, each with its own music.",
-    "b_facts": ["150 beds", "15 gardens", "Herbarium", "Plays offline"],
-    "b_shot_alt": "Bumblossom: bees circle a flower bed while a tulip blooms",
+    "b_teaser": "Send busy bees out of their hives and watch a picture bloom, bud by bud. Every finished motif is pressed into your herbarium – 400 beds across 40 gardens, each with its own look and its own music.",
+    "b_facts": ["400 beds", "40 gardens", "Herbarium", "Plays offline"],
+    "b_shot_alt": "Bumblossom: bees in air bubbles circle a flower bed in the underwater garden while a clownfish blooms",
     "b_privacy_link": "Privacy",
     "k_subtitle": "Quiz & sticker book for kids",
     "k_teaser": "Ella the curious owl asks 800 kid-friendly questions across two age levels. Correct answers earn stickers for the album – with no ads and no tracking.",
