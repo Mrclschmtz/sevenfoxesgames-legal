@@ -9,7 +9,7 @@ T = {
     "nav_privacy_quizerra": "Datenschutz Quizerra",
     "nav_privacy_kids": "Datenschutz Quizerra Kids",
     "nav_privacy_bumblossom": "Datenschutz Bumblossom",
-    "footer_claim": "Unabhängiges Spielestudio aus Deutschland. Quizspiele für iPhone und iPad.",
+    "footer_claim": "Unabhängiges Spielestudio aus Deutschland. Spiele für iPhone und iPad.",
     "owner_label": "Inhaber",
     "email_label": "E-Mail",
     "country": "Deutschland",
@@ -23,12 +23,12 @@ T = {
     "support_text": "Fragen, ein Fehler in einer Quizfrage oder ein Problem mit der App? Schreib uns – wir antworten in der Regel innerhalb weniger Tage.",
 
     # Startseite
-    "home_title": "SevenFoxes Games – Quizspiele für iPhone und iPad",
-    "home_desc": "SevenFoxes Games ist ein kleines Spielestudio aus Deutschland. Quizerra und Quizerra Kids: 1.900 handgeschriebene Fragen in drei Sprachen, ohne Konto und ohne eigene Server.",
-    "home_claim": "Quizspiele, die man gern noch eine Runde spielt.",
-    "home_sub": "Ein kleines Studio aus Deutschland. 1.900 handgeschriebene Fragen in drei Sprachen, für iPhone und iPad.",
+    "home_title": "SevenFoxes Games – Spiele für iPhone und iPad",
+    "home_desc": "SevenFoxes Games ist ein kleines Spielestudio aus Deutschland: Quizerra, Quizerra Kids und Bumblossom – ohne Konto und ohne eigene Server.",
+    "home_claim": "Spiele, die man gern noch eine Runde spielt.",
+    "home_sub": "Ein kleines Studio aus Deutschland. Handgemachte Spiele für iPhone und iPad, ohne Konto und ohne Tricks.",
     "home_apps_eyebrow": "Unsere Apps",
-    "home_apps_title": "Zwei Quizspiele, zwei Welten",
+    "home_apps_title": "Drei Spiele, drei Welten",
     "home_studio_eyebrow": "Das Studio",
     "home_studio_title": "Klein, unabhängig, selbst gebaut",
     "home_studio_text": (
@@ -47,7 +47,7 @@ T = {
     # Apps-Übersicht
     "apps_page_title": "Apps – SevenFoxes Games",
     "apps_title": "Unsere Apps",
-    "apps_lead": "Ein Wissensquiz gegen die Zeit für Erwachsene und ein werbefreies Quiz mit Stickerheft für Kinder. Beide für iPhone und iPad, beide in Deutsch, Englisch und Spanisch.",
+    "apps_lead": "Ein Wissensquiz gegen die Zeit für Erwachsene, ein werbefreies Quiz mit Stickerheft für Kinder und ein Bienen-Puzzle, in dem 150 Beete erblühen.",
 
     # Quizerra
     "q_page_title": "Quizerra – Wissensquiz gegen die Zeit",

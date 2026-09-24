@@ -8,7 +8,7 @@ T = {
     "nav_privacy_quizerra": "Privacy – Quizerra",
     "nav_privacy_kids": "Privacy – Quizerra Kids",
     "nav_privacy_bumblossom": "Privacy – Bumblossom",
-    "footer_claim": "Independent game studio from Germany. Quiz games for iPhone and iPad.",
+    "footer_claim": "Independent game studio from Germany. Games for iPhone and iPad.",
     "owner_label": "Owner",
     "email_label": "Email",
     "country": "Germany",
@@ -21,12 +21,12 @@ T = {
     "support_eyebrow": "Support",
     "support_text": "Questions, a mistake in a quiz question, or a problem with the app? Write to us – we usually reply within a few days.",
 
-    "home_title": "SevenFoxes Games – quiz games for iPhone and iPad",
-    "home_desc": "SevenFoxes Games is a small game studio from Germany. Quizerra and Quizerra Kids: 1,900 hand-written questions in three languages, with no account and no servers of our own.",
-    "home_claim": "Quiz games you'll want to play one more round of.",
-    "home_sub": "A small studio from Germany. 1,900 hand-written questions in three languages, for iPhone and iPad.",
+    "home_title": "SevenFoxes Games – games for iPhone and iPad",
+    "home_desc": "SevenFoxes Games is a small game studio from Germany: Quizerra, Quizerra Kids and Bumblossom – with no account and no servers of our own.",
+    "home_claim": "Games you'll want to play one more round of.",
+    "home_sub": "A small studio from Germany. Handmade games for iPhone and iPad, with no account and no tricks.",
     "home_apps_eyebrow": "Our apps",
-    "home_apps_title": "Two quiz games, two worlds",
+    "home_apps_title": "Three games, three worlds",
     "home_studio_eyebrow": "The studio",
     "home_studio_title": "Small, independent, built by hand",
     "home_studio_text": (
@@ -44,7 +44,7 @@ T = {
 
     "apps_page_title": "Apps – SevenFoxes Games",
     "apps_title": "Our apps",
-    "apps_lead": "A trivia game against the clock for grown-ups, and an ad-free quiz with a sticker book for children. Both for iPhone and iPad, both in English, German and Spanish.",
+    "apps_lead": "A trivia game against the clock for grown-ups, an ad-free quiz with a sticker book for children, and a bee puzzle in which 150 flower beds come into bloom.",
 
     "q_page_title": "Quizerra – trivia against the clock",
     "q_desc": "Quizerra is a fast-paced trivia game for iPhone and iPad: 1,100 questions across 11 categories, two minutes per round, a daily challenge and 55 emblems to collect. Free, in English, German and Spanish.",

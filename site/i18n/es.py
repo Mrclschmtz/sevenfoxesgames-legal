@@ -8,7 +8,7 @@ T = {
     "nav_privacy_quizerra": "Privacidad – Quizerra",
     "nav_privacy_kids": "Privacidad – Quizerra Kids",
     "nav_privacy_bumblossom": "Privacidad – Bumblossom",
-    "footer_claim": "Estudio de juegos independiente de Alemania. Juegos de preguntas para iPhone y iPad.",
+    "footer_claim": "Estudio de juegos independiente de Alemania. Juegos para iPhone y iPad.",
     "owner_label": "Titular",
     "email_label": "Correo electrónico",
     "country": "Alemania",
@@ -21,12 +21,12 @@ T = {
     "support_eyebrow": "Soporte",
     "support_text": "¿Dudas, un error en una pregunta o un problema con la app? Escríbenos: normalmente respondemos en pocos días.",
 
-    "home_title": "SevenFoxes Games – juegos de preguntas para iPhone y iPad",
-    "home_desc": "SevenFoxes Games es un pequeño estudio de juegos de Alemania. Quizerra y Quizerra Kids: 1.900 preguntas escritas a mano en tres idiomas, sin cuenta y sin servidores propios.",
-    "home_claim": "Juegos de preguntas de los que siempre apetece una ronda más.",
-    "home_sub": "Un pequeño estudio de Alemania. 1.900 preguntas escritas a mano en tres idiomas, para iPhone y iPad.",
+    "home_title": "SevenFoxes Games – juegos para iPhone y iPad",
+    "home_desc": "SevenFoxes Games es un pequeño estudio de juegos de Alemania: Quizerra, Quizerra Kids y Bumblossom, sin cuenta y sin servidores propios.",
+    "home_claim": "Juegos de los que siempre apetece una ronda más.",
+    "home_sub": "Un pequeño estudio de Alemania. Juegos hechos a mano para iPhone y iPad, sin cuenta y sin trucos.",
     "home_apps_eyebrow": "Nuestras apps",
-    "home_apps_title": "Dos juegos de preguntas, dos mundos",
+    "home_apps_title": "Tres juegos, tres mundos",
     "home_studio_eyebrow": "El estudio",
     "home_studio_title": "Pequeño, independiente, hecho a mano",
     "home_studio_text": (
@@ -44,7 +44,7 @@ T = {
 
     "apps_page_title": "Apps – SevenFoxes Games",
     "apps_title": "Nuestras apps",
-    "apps_lead": "Un trivial contrarreloj para adultos y un quiz sin publicidad con álbum de pegatinas para niños. Ambos para iPhone y iPad, ambos en español, alemán e inglés.",
+    "apps_lead": "Un trivial contrarreloj para adultos, un quiz sin publicidad con álbum de pegatinas para niños y un puzle de abejas en el que florecen 150 bancales.",
 
     "q_page_title": "Quizerra – trivial contrarreloj",
     "q_desc": "Quizerra es un juego de preguntas rápido para iPhone y iPad: 1.100 preguntas en 11 categorías, dos minutos por ronda, reto diario y 55 emblemas por coleccionar. Gratis, en español, alemán e inglés.",
