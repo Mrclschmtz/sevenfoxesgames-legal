@@ -24,6 +24,8 @@ sys.path.insert(0, str(SITE))
 import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
+# Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
+CSS_VERSION = "20260926"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -131,6 +133,7 @@ def build_page(template, key, lang, t):
         "{{home}}": url("home", lang),
         "{{content}}": page["content"],
         "{{banner}}": banner_html(t, lang, key),
+        "{{cssv}}": CSS_VERSION,
         "{{footer}}": footer_html(t, lang),
         "{{footer_claim}}": t["footer_claim"],
         "{{skip}}": t["skip_to_content"],
