@@ -17,6 +17,8 @@ T = {
     "btn_more": "Learn more",
     "kids_soon": "On the App Store from October 8",
     "banner_kids_title": "Quizerra Kids launches on October 8!",
+    "banner_live_title": "Quizerra Kids is here!",
+    "banner_live_text": "The ad-free quiz with a sticker book for kids aged 6 to 12 – now free on the App Store.",
     "banner_kids_text": "The ad-free quiz with a sticker book for kids aged 6 to 12 – on the App Store from Thursday, October 8, 2026.",
     "gallery_eyebrow": "A closer look",
     "privacy_eyebrow": "Privacy",

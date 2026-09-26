@@ -17,6 +17,8 @@ T = {
     "btn_more": "Más información",
     "kids_soon": "En el App Store desde el 8 de octubre",
     "banner_kids_title": "¡Quizerra Kids llega el 8 de octubre!",
+    "banner_live_title": "¡Quizerra Kids ya está aquí!",
+    "banner_live_text": "El quiz sin anuncios con álbum de pegatinas para niños de 6 a 12 años, ya gratis en el App Store.",
     "banner_kids_text": "El quiz sin anuncios con álbum de pegatinas para niños de 6 a 12 años, en el App Store desde el jueves 8 de octubre de 2026.",
     "gallery_eyebrow": "Un vistazo",
     "privacy_eyebrow": "Privacidad",

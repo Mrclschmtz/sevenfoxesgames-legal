@@ -9,6 +9,14 @@ import random
 
 HERE = pathlib.Path(__file__).resolve().parent
 APP_STORE_QUIZERRA = "https://apps.apple.com/app/id6789493203"
+APP_STORE_KIDS = "https://apps.apple.com/app/id6808029347"
+
+# Launch-Schalter für Quizerra Kids (Veröffentlichung Do 08.10.2026, 09:00 MESZ).
+# False: „Ab 8. Oktober"-Badge + Ankündigungs-Banner. True: Store-Button + „Jetzt im
+# App Store"-Banner. Umschalten mit `python3 site/golive_kids.py` (oder KIDS_LIVE=1
+# zum Probebauen).
+import os as _os
+KIDS_LIVE = False or _os.environ.get("KIDS_LIVE") == "1"
 MAIL = "kontakt@sevenfoxes.de"
 
 # Impressum-Angaben, die nur Marcel liefern kann. Solange None, wird die Zeile
@@ -59,14 +67,19 @@ def kids_word():
             '<span class="kids-word"><b>K</b><b>I</b><b>D</b><b>S</b></span></span>')
 
 
-def store_button(t):
-    return (f'<a class="btn btn-store" href="{APP_STORE_QUIZERRA}" rel="noopener">'
+def store_button(t, href=APP_STORE_QUIZERRA):
+    return (f'<a class="btn btn-store" href="{href}" rel="noopener">'
             f'<span class="apple" aria-hidden="true">&#63743;</span>'
             f'<span>{t["btn_store"]}<br><small>{t["btn_store_small"]}</small></span></a>')
 
 
 def soon_badge(t):
     return f'<span class="soon">{t["kids_soon"]}</span>'
+
+
+def kids_cta(t):
+    """Vor dem Launch das Datums-Badge, danach der echte Store-Button."""
+    return store_button(t, APP_STORE_KIDS) if KIDS_LIVE else soon_badge(t)
 
 
 def facts(items):
@@ -100,7 +113,7 @@ def panel_kids(t, lang, url):
     <p class="app-sub">{t["k_subtitle"]}</p>
     <p>{t["k_teaser"]}</p>
     {facts(t["k_facts"])}
-    <div class="actions">{soon_badge(t)}
+    <div class="actions">{kids_cta(t)}
       <a class="btn btn-ghost" href="{url("kids", lang)}">{t["btn_more"]}</a></div>
   </div>
   <div class="panel-art">
@@ -285,8 +298,8 @@ def page_kids(t, lang, url):
       <h1>{kids_word()}</h1></div>
     <p class="app-sub">{t["k_subtitle"]}</p>
     <p class="lead">{t["k_lead"]}</p>
-    <div class="actions">{soon_badge(t)}</div>
-    <p class="muted" style="margin-top:12px;font-size:.95rem">{t["k_soon_note"]}</p>
+    <div class="actions">{kids_cta(t)}</div>
+    {"" if KIDS_LIVE else f'<p class="muted" style="margin-top:12px;font-size:.95rem">{t["k_soon_note"]}</p>'}
     <ul class="statrow">{stats}</ul>
   </div>
   <div class="panel-art">

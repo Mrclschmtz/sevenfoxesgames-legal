@@ -41,3 +41,13 @@ Die Pflichtangaben stehen in `site/pages.py` (`page_imprint`) und
 `site/i18n/*.py`. Telefonnummer und Umsatzsteuer-Angaben werden nur gerendert,
 wenn die Konstanten `PHONE`, `VAT_ID`, `W_ID` bzw. `SMALL_BUSINESS` oben in
 `site/pages.py` gesetzt sind.
+
+## Launch-Tag Quizerra Kids (08.10.2026)
+
+Der Schalter `KIDS_LIVE` in `site/pages.py` steuert Store-Button (statt „Ab 8. Oktober"-Badge),
+den Hinweistext auf der Kids-Seite und das Banner („Quizerra Kids ist da!", verschwindet am 22.10.
+von selbst). Umschalten und veröffentlichen mit einem Befehl:
+
+    python3 site/golive_kids.py --push
+
+Vorher probebauen ohne Umschalten: `KIDS_LIVE=1 python3 build.py`.

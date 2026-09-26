@@ -18,6 +18,8 @@ T = {
     "btn_more": "Mehr erfahren",
     "kids_soon": "Ab 8. Oktober im App Store",
     "banner_kids_title": "Quizerra Kids erscheint am 8. Oktober!",
+    "banner_live_title": "Quizerra Kids ist da!",
+    "banner_live_text": "Das werbefreie Quiz mit Stickerheft für Kinder von 6 bis 12 – jetzt kostenlos im App Store.",
     "banner_kids_text": "Das werbefreie Quiz mit Stickerheft für Kinder von 6 bis 12 – ab Donnerstag, 8. Oktober 2026 im App Store.",
     "gallery_eyebrow": "Einblicke",
     "privacy_eyebrow": "Datenschutz",

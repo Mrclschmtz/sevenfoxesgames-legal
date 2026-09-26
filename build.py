@@ -91,11 +91,18 @@ def banner_html(t, lang, key):
     die Seite bis dahin nicht neu gebaut wurde."""
     if key in CANONICAL_LANG:
         return ""
-    return f'''<a class="launch-banner" href="{url("kids", lang)}" data-until="2026-10-08T07:00:00Z">
+    if pages.KIDS_LIVE:
+        # Nach dem Launch: zwei Wochen „Jetzt im App Store", dann verschwindet das Banner.
+        href, until = pages.APP_STORE_KIDS, "2026-10-22T07:00:00Z"
+        title, text, cta = t["banner_live_title"], t["banner_live_text"], t["btn_store"]
+    else:
+        href, until = url("kids", lang), "2026-10-08T07:00:00Z"
+        title, text, cta = t["banner_kids_title"], t["banner_kids_text"], t["btn_more"]
+    return f'''<a class="launch-banner" href="{href}" data-until="{until}"{" rel=\"noopener\"" if pages.KIDS_LIVE else ""}>
   <span class="wrap">
-    <img src="/assets/img/kids/ella-happy.png" alt="" width="40" height="40" loading="lazy">
-    <span class="launch-text"><b>{t["banner_kids_title"]}</b> {t["banner_kids_text"]}</span>
-    <span class="launch-cta">{t["btn_more"]} &rarr;</span>
+    <img src="/assets/img/kids/ella-{"cheer" if pages.KIDS_LIVE else "happy"}.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>{title}</b> {text}</span>
+    <span class="launch-cta">{cta} &rarr;</span>
   </span>
 </a>
 <script>(function(){{var b=document.querySelector(".launch-banner");if(b&&Date.now()>Date.parse(b.dataset.until))b.remove();}})();</script>'''
