@@ -83,6 +83,22 @@ def alternates_html(key):
     return "\n".join(out)
 
 
+def banner_html(t, lang, key):
+    """Launch-Banner für Quizerra Kids (08.10.2026) – auf allen Seiten außer den
+    App-Rechtstexten. Blendet sich nach dem Launchzeitpunkt selbst aus, falls
+    die Seite bis dahin nicht neu gebaut wurde."""
+    if key in CANONICAL_LANG:
+        return ""
+    return f'''<a class="launch-banner" href="{url("kids", lang)}" data-until="2026-10-08T07:00:00Z">
+  <span class="wrap">
+    <img src="/assets/img/kids/ella-happy.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>{t["banner_kids_title"]}</b> {t["banner_kids_text"]}</span>
+    <span class="launch-cta">{t["btn_more"]} &rarr;</span>
+  </span>
+</a>
+<script>(function(){{var b=document.querySelector(".launch-banner");if(b&&Date.now()>Date.parse(b.dataset.until))b.remove();}})();</script>'''
+
+
 def footer_html(t, lang):
     legal = [
         ("imprint", t["nav_imprint"]),
@@ -114,6 +130,7 @@ def build_page(template, key, lang, t):
         "{{langswitch}}": langswitch_html(key, lang),
         "{{home}}": url("home", lang),
         "{{content}}": page["content"],
+        "{{banner}}": banner_html(t, lang, key),
         "{{footer}}": footer_html(t, lang),
         "{{footer_claim}}": t["footer_claim"],
         "{{skip}}": t["skip_to_content"],

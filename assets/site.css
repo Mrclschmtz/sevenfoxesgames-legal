@@ -317,3 +317,21 @@ p { margin: 0 0 1em; }
 .imprint dt { font-family: var(--font-pixel); font-size: 1.05rem; letter-spacing: .04em; color: var(--muted); margin: 0; }
 .imprint dd { margin: 0; }
 @media (max-width: 560px) { .imprint > div { grid-template-columns: 1fr; gap: 2px; } }
+
+/* ---------- Launch-Banner (Quizerra Kids, 08.10.2026) ---------- */
+.launch-banner { display: block; text-decoration: none; color: #1A1511;
+  background: linear-gradient(90deg, #FFF8E4 0%, #E6EEFA 55%, #C7DFF7 100%);
+  border-bottom: 1px solid rgba(26, 21, 17, .12); }
+.launch-banner .wrap { display: flex; align-items: center; gap: 14px; padding: 12px 20px; }
+.launch-banner img { width: 40px; height: 40px; flex: none; object-fit: contain; }
+.launch-banner .launch-text { flex: 1; font-size: .98rem; line-height: 1.35; }
+.launch-banner .launch-text b { font-family: var(--font-display); font-weight: 800; color: var(--kids-green); margin-right: 6px; }
+.launch-banner .launch-cta { flex: none; font-family: var(--font-pixel); font-size: 1rem; letter-spacing: .03em;
+  padding: 8px 14px; border-radius: 999px; background: var(--kids-green); color: #fff; white-space: nowrap; }
+.launch-banner:hover .launch-cta { background: #5A9A08; }
+.launch-banner:focus-visible { outline: 3px solid var(--kids-green); outline-offset: -3px; }
+@media (max-width: 640px) {
+  .launch-banner .wrap { flex-wrap: wrap; gap: 10px 12px; padding: 12px 16px; }
+  .launch-banner .launch-text { flex-basis: calc(100% - 52px); font-size: .93rem; }
+  .launch-banner .launch-cta { margin-left: 52px; }
+}
