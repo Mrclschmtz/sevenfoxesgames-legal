@@ -10,6 +10,7 @@ import random
 HERE = pathlib.Path(__file__).resolve().parent
 APP_STORE_QUIZERRA = "https://apps.apple.com/app/id6789493203"
 APP_STORE_KIDS = "https://apps.apple.com/app/id6808029347"
+APP_STORE_BUMBLOSSOM = "https://apps.apple.com/app/id6815565230"
 
 # Launch-Schalter für Quizerra Kids (Veröffentlichung Do 08.10.2026, 09:00 MESZ).
 # False: „Ab 8. Oktober"-Badge + Ankündigungs-Banner. True: Store-Button + „Jetzt im
@@ -17,6 +18,8 @@ APP_STORE_KIDS = "https://apps.apple.com/app/id6808029347"
 # zum Probebauen).
 import os as _os
 KIDS_LIVE = False or _os.environ.get("KIDS_LIVE") == "1"
+# Bumblossom-Launch (01.10.2026): Store-Button statt „Ab 1. Oktober"-Badge. Umschalten: BUMBLOSSOM_LIVE = True, dann build.py
+BUMBLOSSOM_LIVE = False or _os.environ.get("BUMBLOSSOM_LIVE") == "1"
 MAIL = "kontakt@sevenfoxes.de"
 
 # Impressum-Angaben, die nur Marcel liefern kann. Solange None, wird die Zeile
@@ -67,10 +70,10 @@ def kids_word():
             '<span class="kids-word"><b>K</b><b>I</b><b>D</b><b>S</b></span></span>')
 
 
-def store_button(t, href=APP_STORE_QUIZERRA):
+def store_button(t, href=APP_STORE_QUIZERRA, small=None):
     return (f'<a class="btn btn-store" href="{href}" rel="noopener">'
             f'<span class="apple" aria-hidden="true">&#63743;</span>'
-            f'<span>{t["btn_store"]}<br><small>{t["btn_store_small"]}</small></span></a>')
+            f'<span>{t["btn_store"]}<br><small>{small or t["btn_store_small"]}</small></span></a>')
 
 
 def soon_badge(t):
@@ -80,6 +83,11 @@ def soon_badge(t):
 def kids_cta(t):
     """Vor dem Launch das Datums-Badge, danach der echte Store-Button."""
     return store_button(t, APP_STORE_KIDS) if KIDS_LIVE else soon_badge(t)
+
+
+def bumblossom_cta(t):
+    """Vor dem Launch das Datums-Badge, danach der Store-Button (nur iPhone)."""
+    return store_button(t, APP_STORE_BUMBLOSSOM, t["b_store_small"]) if BUMBLOSSOM_LIVE else f'<span class="soon">{t["b_soon"]}</span>'
 
 
 def facts(items):
@@ -133,8 +141,8 @@ def panel_bumblossom(t, lang, url):
     <p class="app-sub">{t["b_subtitle"]}</p>
     <p>{t["b_teaser"]}</p>
     {facts(t["b_facts"])}
-    <div class="actions">{soon_badge(t)}
-      <a class="btn btn-ghost" href="{url("legal-bumblossom", lang)}#{lang}">{t["b_privacy_link"]}</a></div>
+    <div class="actions">{bumblossom_cta(t)}
+      <a class="btn btn-ghost" href="{url("bumblossom", lang)}">{t["btn_more"]}</a></div>
   </div>
   <div class="panel-art">
     <img class="device" src="/assets/img/bumblossom/hero-device.jpg" alt="{t["b_shot_alt"]}" width="560" height="1127" loading="lazy">
@@ -371,6 +379,76 @@ def page_kids(t, lang, url):
                 og_image="/assets/img/kids/icon.png")
 
 
+
+def page_bumblossom(t, lang, url):
+    stats = "".join(f"<li><b>{b}</b><span>{s}</span></li>" for b, s in t["b_stats"])
+    steps = "".join(f"<li>{s}</li>" for s in t["b_how"])
+    names = ["01-bloom", "02-bees", "03-gardens", "04-herbarium", "05-pressed", "06-start"]
+    content = f'''
+<section class="product-hero wrap">
+  <div class="panel-copy">
+    <div class="app-name"><img src="/assets/img/bumblossom/icon.png" alt="" width="64" height="64">
+      <h1><span class="display">BUMB<b>LOSSOM</b></span></h1></div>
+    <p class="app-sub">{t["b_subtitle"]}</p>
+    <p class="lead">{t["b_lead"]}</p>
+    <div class="actions">{bumblossom_cta(t)}</div>
+    {"" if BUMBLOSSOM_LIVE else f'<p class="muted" style="margin-top:12px;font-size:.95rem">{t["b_soon_note"]}</p>'}
+    <ul class="statrow">{stats}</ul>
+  </div>
+  <div class="panel-art">
+    <img class="device" src="/assets/img/bumblossom/hero-device.jpg" alt="{t["b_shot_alt"]}" width="560" height="1127">
+    <img class="bee" src="/assets/img/bumblossom/bee_y.png" alt="">
+    <img class="sticker" src="/assets/img/bumblossom/flower_r.png" alt="" style="right:-2%;top:8%;transform:rotate(14deg)" loading="lazy">
+    <img class="sticker" src="/assets/img/bumblossom/flower_b.png" alt="" style="right:6%;bottom:6%;width:16%;transform:rotate(-10deg)" loading="lazy">
+  </div>
+</section>
+<div class="wrap">{pixels("b-1")}</div>
+
+<section class="section wrap">
+  <div class="two-col">
+    <div>
+      <p class="eyebrow">{t["b_how_eyebrow"]}</p>
+      <h2>{t["b_how_title"]}</h2>
+      <ol class="steps" style="margin-top:20px">{steps}</ol>
+    </div>
+    <div>
+      <p class="eyebrow">{t["b_gardens_eyebrow"]}</p>
+      <h2>{t["b_gardens_title"]}</h2>
+      <p class="muted" style="margin-top:10px">{t["b_gardens_text"]}</p>
+      {chips(t["b_gardens"], t["b_gardens_more"])}
+    </div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <p class="eyebrow">{t["q_feat_eyebrow"]}</p>
+  <h2 style="margin-bottom:22px">{t["b_feat_title"]}</h2>
+  {features(t["b_features"])}
+</section>
+
+<section class="section wrap">
+  <p class="eyebrow">{t["gallery_eyebrow"]}</p>
+  <h2 style="margin-bottom:8px">{t["b_gallery_title"]}</h2>
+  {gallery("bumblossom", lang, names, t["b_gallery_alts"])}
+</section>
+
+<section class="section wrap">
+  <div class="two-col">
+    <div class="note">
+      <p class="eyebrow">{t["privacy_eyebrow"]}</p>
+      <p>{t["b_privacy_text"]}</p>
+      <p><a href="{url("legal-bumblossom", lang)}#{lang}">{t["b_privacy_full"]}</a></p>
+    </div>
+    <div class="note">
+      <p class="eyebrow">{t["support_eyebrow"]}</p>
+      <p>{t["support_text"]}</p>
+      <p><a href="mailto:{MAIL}?subject=Bumblossom">{MAIL}</a> · <a href="{url("contact", lang)}">{t["nav_contact"]}</a></p>
+    </div>
+  </div>
+</section>'''
+    return dict(title=t["b_page_title"], description=t["b_desc"], world="garden", content=content,
+                og_image="/assets/img/bumblossom/icon.png")
+
 def page_contact(t, lang, url):
     topics = "".join(f"<li>{x}</li>" for x in t["contact_topics"])
     content = f'''
@@ -464,6 +542,8 @@ def render(key, lang, t, url):
         return page_quizerra(t, lang, url)
     if key == "kids":
         return page_kids(t, lang, url)
+    if key == "bumblossom":
+        return page_bumblossom(t, lang, url)
     if key == "contact":
         return page_contact(t, lang, url)
     if key == "imprint":

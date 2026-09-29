@@ -51,3 +51,10 @@ von selbst). Umschalten und veröffentlichen mit einem Befehl:
     python3 site/golive_kids.py --push
 
 Vorher probebauen ohne Umschalten: `KIDS_LIVE=1 python3 build.py`.
+
+## Launch-Tag Bumblossom (01.10.2026)
+
+Der Schalter `BUMBLOSSOM_LIVE` in `site/pages.py` tauscht auf Startseite, Apps-Übersicht und
+Produktseite `/apps/bumblossom/` das „Ab 1. Oktober"-Badge gegen den App-Store-Button:
+
+    python3 site/golive_bumblossom.py --push

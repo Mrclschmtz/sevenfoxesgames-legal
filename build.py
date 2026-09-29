@@ -25,7 +25,7 @@ import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20260926"
+CSS_VERSION = "20260929"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -34,6 +34,7 @@ SLUGS = {
     "apps":          {"de": "apps/",          "en": "en/apps/",           "es": "es/apps/"},
     "quizerra":      {"de": "apps/quizerra/", "en": "en/apps/quizerra/",  "es": "es/apps/quizerra/"},
     "kids":          {"de": "apps/quizerra-kids/", "en": "en/apps/quizerra-kids/", "es": "es/apps/quizerra-kids/"},
+    "bumblossom":    {"de": "apps/bumblossom/", "en": "en/apps/bumblossom/", "es": "es/apps/bumblossom/"},
     "contact":       {"de": "kontakt/",       "en": "en/contact/",        "es": "es/contacto/"},
     "imprint":       {"de": "impressum/",     "en": "en/legal-notice/",   "es": "es/aviso-legal/"},
     "privacy":       {"de": "datenschutz/",   "en": "en/privacy/",        "es": "es/privacidad/"},
@@ -59,7 +60,7 @@ def nav_html(t, lang, current):
     items = [("apps", t["nav_apps"]), ("contact", t["nav_contact"])]
     out = []
     for key, label in items:
-        cls = ' class="is-current"' if key == current or (key == "apps" and current in ("quizerra", "kids")) else ""
+        cls = ' class="is-current"' if key == current or (key == "apps" and current in ("quizerra", "kids", "bumblossom")) else ""
         out.append(f'<a href="{url(key, lang)}"{cls}>{label}</a>')
     return "\n      ".join(out)
 

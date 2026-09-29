@@ -142,7 +142,7 @@ p { margin: 0 0 1em; }
 .lang a:hover { color: var(--fg); }
 
 /* ---------- Hero (Startseite) ---------- */
-.hero { text-align: center; padding: 64px 0 24px; position: relative; }
+.hero { text-align: center; padding-block: 64px 24px; position: relative; }
 .hero .logo-full { width: min(420px, 78vw); margin: 0 auto 28px; position: relative; z-index: 1; }
 .hero h1 { max-width: 20ch; margin: 0 auto 14px; }
 .hero .lead { margin: 0 auto; }
@@ -163,7 +163,7 @@ p { margin: 0 0 1em; }
 .pixels { display: block; width: 100%; height: 26px; color: var(--pixel); margin: 36px 0 12px; }
 
 /* ---------- Abschnitte ---------- */
-.section { padding: 40px 0; }
+.section { padding-block: 40px; }
 .section-head { max-width: 62ch; margin-bottom: 28px; }
 
 /* ---------- App-Panels: jede App in ihrer Welt ---------- */
@@ -226,7 +226,7 @@ p { margin: 0 0 1em; }
 .principle p { margin: 0; color: var(--muted); font-size: .98rem; }
 
 /* ---------- Produktseiten ---------- */
-.product-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 5vw, 64px); align-items: center; padding: 56px 0 24px;
+.product-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 5vw, 64px); align-items: center; padding-block: 56px 24px;
                 overflow-x: clip; } /* Sticker/Ella duerfen ueber den Rand ragen, aber keinen Scrollbalken erzeugen */
 .product-hero .device { width: min(360px, 100%); }
 .product-hero .lead { max-width: 46ch; }

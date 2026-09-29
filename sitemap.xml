@@ -73,6 +73,24 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra-kids/"/>
   </url>
   <url>
+    <loc>https://sevenfoxes.de/apps/bumblossom/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/en/apps/bumblossom/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/es/apps/bumblossom/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+  </url>
+  <url>
     <loc>https://sevenfoxes.de/kontakt/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/kontakt/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/contact/"/>
