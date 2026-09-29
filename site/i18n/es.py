@@ -234,4 +234,8 @@ T = {
     "b_privacy_text": "Bumblossom no necesita cuenta ni usa servidores propios. Tu progreso se queda en tu dispositivo. La versión gratuita muestra anuncios de Google AdMob, personalizados solo con tu consentimiento.",
     "b_privacy_full": "Política de privacidad de Bumblossom",
     "b_soon_note": "Bumblossom llega al App Store el jueves 1 de octubre de 2026. A partir de entonces encontrarás aquí el enlace.",
+    "banner_b_title": "¡Bumblossom llega el 1 de octubre!",
+    "banner_b_text": "El relajante puzle de abejas con 400 parterres en 40 jardines, en el App Store desde el jueves.",
+    "banner_b_live_title": "¡Bumblossom ya está aquí!",
+    "banner_b_live_text": "El relajante puzle de abejas con 400 parterres en 40 jardines, ya gratis en el App Store.",
 }

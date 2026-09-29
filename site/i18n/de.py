@@ -244,4 +244,8 @@ T = {
     "b_privacy_text": "Bumblossom braucht kein Konto und betreibt keine eigenen Server. Dein Spielstand bleibt auf deinem Gerät. Die kostenlose Version zeigt Werbung von Google AdMob – nur mit deiner Einwilligung personalisiert.",
     "b_privacy_full": "Datenschutzerklärung Bumblossom",
     "b_soon_note": "Bumblossom erscheint am Donnerstag, 1. Oktober 2026 im App Store. Ab dann findest du hier den Link.",
+    "banner_b_title": "Bumblossom erscheint am 1. Oktober!",
+    "banner_b_text": "Das entspannte Bienen-Puzzle mit 400 Beeten in 40 Gärten – ab Donnerstag im App Store.",
+    "banner_b_live_title": "Bumblossom ist da!",
+    "banner_b_live_text": "Das entspannte Bienen-Puzzle mit 400 Beeten in 40 Gärten – jetzt kostenlos im App Store.",
 }

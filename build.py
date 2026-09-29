@@ -25,7 +25,7 @@ import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20260929"
+CSS_VERSION = "20260929b"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -87,11 +87,26 @@ def alternates_html(key):
 
 
 def banner_html(t, lang, key):
-    """Launch-Banner für Quizerra Kids (08.10.2026) – auf allen Seiten außer den
-    App-Rechtstexten. Blendet sich nach dem Launchzeitpunkt selbst aus, falls
-    die Seite bis dahin nicht neu gebaut wurde."""
+    """Launch-Banner – auf allen Seiten außer den App-Rechtstexten: Bumblossom (01.10.2026) über
+    Quizerra Kids (08.10.2026). Jedes blendet sich nach seinem Stichtag selbst aus, falls die Seite
+    bis dahin nicht neu gebaut wurde."""
     if key in CANONICAL_LANG:
         return ""
+    out = []
+    # Bumblossom: vor dem Launch „erscheint am 1. Oktober“, danach zwei Wochen „ist da“
+    if pages.BUMBLOSSOM_LIVE:
+        href, until, rel = pages.APP_STORE_BUMBLOSSOM, "2026-10-15T07:00:00Z", True
+        title, text, cta = t["banner_b_live_title"], t["banner_b_live_text"], t["btn_store"]
+    else:
+        href, until, rel = url("bumblossom", lang), "2026-10-01T07:00:00Z", False
+        title, text, cta = t["banner_b_title"], t["banner_b_text"], t["btn_more"]
+    out.append(f'''<a class="launch-banner bb" href="{href}" data-until="{until}"{" rel=\"noopener\"" if rel else ""}>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/bee_y.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>{title}</b> {text}</span>
+    <span class="launch-cta">{cta} &rarr;</span>
+  </span>
+</a>''')
     if pages.KIDS_LIVE:
         # Nach dem Launch: zwei Wochen „Jetzt im App Store", dann verschwindet das Banner.
         href, until = pages.APP_STORE_KIDS, "2026-10-22T07:00:00Z"
@@ -99,14 +114,15 @@ def banner_html(t, lang, key):
     else:
         href, until = url("kids", lang), "2026-10-08T07:00:00Z"
         title, text, cta = t["banner_kids_title"], t["banner_kids_text"], t["btn_more"]
-    return f'''<a class="launch-banner" href="{href}" data-until="{until}"{" rel=\"noopener\"" if pages.KIDS_LIVE else ""}>
+    out.append(f'''<a class="launch-banner" href="{href}" data-until="{until}"{" rel=\"noopener\"" if pages.KIDS_LIVE else ""}>
   <span class="wrap">
     <img src="/assets/img/kids/ella-{"cheer" if pages.KIDS_LIVE else "happy"}.png" alt="" width="40" height="40" loading="lazy">
     <span class="launch-text"><b>{title}</b> {text}</span>
     <span class="launch-cta">{cta} &rarr;</span>
   </span>
-</a>
-<script>(function(){{var b=document.querySelector(".launch-banner");if(b&&Date.now()>Date.parse(b.dataset.until))b.remove();}})();</script>'''
+</a>''')
+    return "\n".join(out) + '''
+<script>(function(){document.querySelectorAll(".launch-banner").forEach(function(b){if(Date.now()>Date.parse(b.dataset.until))b.remove();});})();</script>'''
 
 
 def footer_html(t, lang):

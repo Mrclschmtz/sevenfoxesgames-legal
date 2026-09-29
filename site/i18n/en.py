@@ -234,4 +234,8 @@ T = {
     "b_privacy_text": "Bumblossom needs no account and runs no servers of its own. Your progress stays on your device. The free version shows ads from Google AdMob – personalized only with your consent.",
     "b_privacy_full": "Bumblossom privacy policy",
     "b_soon_note": "Bumblossom comes to the App Store on Thursday, October 1, 2026. You will find the link here from then on.",
+    "banner_b_title": "Bumblossom arrives on October 1!",
+    "banner_b_text": "The relaxing bee puzzle with 400 flower beds in 40 gardens – on the App Store from Thursday.",
+    "banner_b_live_title": "Bumblossom is here!",
+    "banner_b_live_text": "The relaxing bee puzzle with 400 flower beds in 40 gardens – free on the App Store now.",
 }
