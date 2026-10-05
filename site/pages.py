@@ -17,7 +17,7 @@ APP_STORE_BUMBLOSSOM = "https://apps.apple.com/app/id6815565230"
 # App Store"-Banner. Umschalten mit `python3 site/golive_kids.py` (oder KIDS_LIVE=1
 # zum Probebauen).
 import os as _os
-KIDS_LIVE = False or _os.environ.get("KIDS_LIVE") == "1"
+KIDS_LIVE = True or _os.environ.get("KIDS_LIVE") == "1"
 # Bumblossom-Launch (01.10.2026): Store-Button statt „Ab 1. Oktober"-Badge. Umschalten: BUMBLOSSOM_LIVE = True, dann build.py
 BUMBLOSSOM_LIVE = True or _os.environ.get("BUMBLOSSOM_LIVE") == "1"
 MAIL = "kontakt@sevenfoxes.de"
