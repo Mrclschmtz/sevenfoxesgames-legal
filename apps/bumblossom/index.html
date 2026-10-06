@@ -19,7 +19,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/Sora[wght].ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=20261006a">
+<link rel="stylesheet" href="/assets/site.css?v=20261006b">
 <script data-goatcounter="https://sevenfoxes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body data-world="garden" class="">
@@ -38,6 +38,27 @@
     <div class="lang" aria-label="Sprache · Language · Idioma"><a href="/apps/bumblossom/" hreflang="de" lang="de" title="Deutsch" aria-current="true">DE</a><a href="/en/apps/bumblossom/" hreflang="en" lang="en" title="English">EN</a><a href="/es/apps/bumblossom/" hreflang="es" lang="es" title="Español">ES</a></div>
   </div>
 </header>
+<a class="launch-banner bb ev" href="/apps/bumblossom/#events" data-from="2026-10-22T22:00:00Z" data-until="2026-11-02T23:00:00Z" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_halloween.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>Halloween im Garten</b> Hexen- und Gruselgarten, nur bis 2. November.</span>
+    <span class="launch-cta">Mehr erfahren &rarr;</span>
+  </span>
+</a>
+<a class="launch-banner bb ev" href="/apps/bumblossom/#events" data-from="2026-11-27T23:00:00Z" data-until="2026-12-24T23:00:00Z" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_advent.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>Der Bienen-Adventskalender</b> Jeden Tag ein Türchen mit neuem Beet – bis Heiligabend.</span>
+    <span class="launch-cta">Mehr erfahren &rarr;</span>
+  </span>
+</a>
+<a class="launch-banner bb ev" href="/apps/bumblossom/#events" data-from="2026-12-24T23:00:00Z" data-until="2027-01-06T23:00:00Z" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_winter.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>Winterzauber im Garten</b> Silvester-Feuerwerk und Türchen nachholen – bis 6. Januar.</span>
+    <span class="launch-cta">Mehr erfahren &rarr;</span>
+  </span>
+</a>
 <a class="launch-banner bb" href="https://apps.apple.com/app/id6815565230" data-until="2026-10-15T07:00:00Z" rel="noopener">
   <span class="wrap">
     <img src="/assets/img/bumblossom/bee_y.png" alt="" width="40" height="40" loading="lazy">
@@ -52,7 +73,8 @@
     <span class="launch-cta">Im App Store laden &rarr;</span>
   </span>
 </a>
-<script>(function(){document.querySelectorAll(".launch-banner").forEach(function(b){if(Date.now()>Date.parse(b.dataset.until))b.remove();});})();</script>
+<script>(function(){var q=new URLSearchParams(location.search).get("jetzt"),n=q?Date.parse(q):Date.now();document.querySelectorAll(".launch-banner").forEach(function(b){
+if(n>Date.parse(b.dataset.until)||(b.dataset.from&&n<Date.parse(b.dataset.from)))b.remove();else b.hidden=false;});})();</script>
 <main id="main">
 
 <section class="product-hero wrap">
@@ -89,6 +111,44 @@
     </div>
   </div>
 </section>
+
+
+<section class="section wrap ev-section" id="events" hidden>
+  <p class="eyebrow">Gerade im Garten</p>
+  <h2 style="margin-bottom:22px">Events in Bumblossom</h2>
+  <div class="ev-grid">
+    <article class="ev-card" data-from="2026-10-22T22:00:00Z" data-until="2026-11-02T23:00:00Z" hidden>
+      <img src="/assets/img/bumblossom/events/halloween.jpg" alt="" width="960" height="540" loading="lazy">
+      <div class="ev-body">
+        <p class="ev-state"><span class="ev-now">Jetzt</span><span class="ev-soon">Bald</span> · 23. Oktober – 2. November</p>
+        <h3>Halloween im Garten</h3>
+        <p class="muted">Hexen- und Gruselgarten mit je 10 Beeten. Lass sie erblühen und behalte Hexenhut und Kürbismütze für immer.</p>
+      </div>
+    </article>
+    <article class="ev-card" data-from="2026-11-27T23:00:00Z" data-until="2026-12-24T23:00:00Z" hidden>
+      <img src="/assets/img/bumblossom/events/advent.jpg" alt="" width="960" height="540" loading="lazy">
+      <div class="ev-body">
+        <p class="ev-state"><span class="ev-now">Jetzt</span><span class="ev-soon">Bald</span> · 28. November – 24. Dezember</p>
+        <h3>Der Bienen-Adventskalender</h3>
+        <p class="muted">Jeden Tag ein Türchen mit neuem Beet. In den Geschenken stecken Rentiergeweih, Mistelzweig und ein Heiligenschein – alle 24 bringen die Weihnachtsmütze.</p>
+      </div>
+    </article>
+    <article class="ev-card" data-from="2026-12-24T23:00:00Z" data-until="2027-01-06T23:00:00Z" hidden>
+      <img src="/assets/img/bumblossom/events/winter.jpg" alt="" width="960" height="540" loading="lazy">
+      <div class="ev-body">
+        <p class="ev-state"><span class="ev-now">Jetzt</span><span class="ev-soon">Bald</span> · 25. Dezember – 6. Januar</p>
+        <h3>Winterzauber im Garten</h3>
+        <p class="muted">Das große Silvester-Feuerwerk als 27×27-Beet. Verpasste Türchen kannst du bis zum 6. Januar nachholen.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<script>(function(){var q=new URLSearchParams(location.search).get("jetzt"),n=q?Date.parse(q):Date.now(),s=document.querySelector(".ev-section"),bald=0;
+s.querySelectorAll(".ev-card").forEach(function(c){var v=Date.parse(c.dataset.from),b=Date.parse(c.dataset.until);
+if(n>=b){c.remove();return;}
+if(n>=v){c.classList.add("is-now");c.hidden=false;}
+else if(bald<1){bald++;c.classList.add("is-soon");c.hidden=false;} else c.remove();});
+if(s.querySelector(".ev-card:not([hidden])"))s.hidden=false;})();</script>
 
 <section class="section wrap">
   <p class="eyebrow">Immer ein Grund weiterzuspielen</p>

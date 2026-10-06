@@ -25,7 +25,7 @@ import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20261006a"
+CSS_VERSION = "20261006b"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -99,6 +99,15 @@ def banner_html(t, lang, key):
     if key in CANONICAL_LANG or key in UNLISTED:
         return ""
     out = []
+    # Bumblossom-Events: alle im HTML, sichtbar nur im eigenen Zeitraum (Skript unten); ohne Skript bleiben sie verborgen
+    for k, von, bis in pages.EVENTS:
+        out.append(f'''<a class="launch-banner bb ev" href="{url("bumblossom", lang)}#events" data-from="{von}" data-until="{bis}" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_{k}.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>{t[f"ev_{k}_title"]}</b> {t[f"banner_ev_{k}"]}</span>
+    <span class="launch-cta">{t["btn_more"]} &rarr;</span>
+  </span>
+</a>''')
     # Bumblossom: vor dem Launch „erscheint am 1. Oktober“, danach zwei Wochen „ist da“
     if pages.BUMBLOSSOM_LIVE:
         href, until, rel = pages.APP_STORE_BUMBLOSSOM, "2026-10-15T07:00:00Z", True
@@ -128,7 +137,8 @@ def banner_html(t, lang, key):
   </span>
 </a>''')
     return "\n".join(out) + '''
-<script>(function(){document.querySelectorAll(".launch-banner").forEach(function(b){if(Date.now()>Date.parse(b.dataset.until))b.remove();});})();</script>'''
+<script>(function(){var q=new URLSearchParams(location.search).get("jetzt"),n=q?Date.parse(q):Date.now();document.querySelectorAll(".launch-banner").forEach(function(b){
+if(n>Date.parse(b.dataset.until)||(b.dataset.from&&n<Date.parse(b.dataset.from)))b.remove();else b.hidden=false;});})();</script>'''
 
 
 def footer_html(t, lang):

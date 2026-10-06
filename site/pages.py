@@ -380,6 +380,41 @@ def page_kids(t, lang, url):
 
 
 
+# Bumblossom-Events: erscheinen per Datum von selbst (data-from/data-until, Skript in build.py) – kein Neubau nötig.
+# Zeiten in UTC = Mitternacht deutscher Zeit (MESZ bis 25.10., danach MEZ).
+EVENTS = [
+    ("halloween", "2026-10-22T22:00:00Z", "2026-11-02T23:00:00Z"),
+    ("advent",    "2026-11-27T23:00:00Z", "2026-12-24T23:00:00Z"),
+    ("winter",    "2026-12-24T23:00:00Z", "2027-01-06T23:00:00Z"),
+]
+
+
+def events_section(t):
+    """„Gerade im Garten“: laufendes Event als „Jetzt“, das nächste als „Bald“, vergangene verschwinden (per Skript)."""
+    cards = "".join(f'''
+    <article class="ev-card" data-from="{von}" data-until="{bis}" hidden>
+      <img src="/assets/img/bumblossom/events/{k}.jpg" alt="" width="960" height="540" loading="lazy">
+      <div class="ev-body">
+        <p class="ev-state"><span class="ev-now">{t["ev_now"]}</span><span class="ev-soon">{t["ev_soon"]}</span> · {t[f"ev_{k}_date"]}</p>
+        <h3>{t[f"ev_{k}_title"]}</h3>
+        <p class="muted">{t[f"ev_{k}_text"]}</p>
+      </div>
+    </article>''' for k, von, bis in EVENTS)
+    return f'''
+<section class="section wrap ev-section" id="events" hidden>
+  <p class="eyebrow">{t["ev_eyebrow"]}</p>
+  <h2 style="margin-bottom:22px">{t["ev_title"]}</h2>
+  <div class="ev-grid">{cards}
+  </div>
+</section>
+<script>(function(){{var q=new URLSearchParams(location.search).get("jetzt"),n=q?Date.parse(q):Date.now(),s=document.querySelector(".ev-section"),bald=0;
+s.querySelectorAll(".ev-card").forEach(function(c){{var v=Date.parse(c.dataset.from),b=Date.parse(c.dataset.until);
+if(n>=b){{c.remove();return;}}
+if(n>=v){{c.classList.add("is-now");c.hidden=false;}}
+else if(bald<1){{bald++;c.classList.add("is-soon");c.hidden=false;}} else c.remove();}});
+if(s.querySelector(".ev-card:not([hidden])"))s.hidden=false;}})();</script>'''
+
+
 def page_bumblossom(t, lang, url):
     stats = "".join(f"<li><b>{b}</b><span>{s}</span></li>" for b, s in t["b_stats"])
     steps = "".join(f"<li>{s}</li>" for s in t["b_how"])
@@ -419,6 +454,8 @@ def page_bumblossom(t, lang, url):
     </div>
   </div>
 </section>
+
+{events_section(t)}
 
 <section class="section wrap">
   <p class="eyebrow">{t["q_feat_eyebrow"]}</p>

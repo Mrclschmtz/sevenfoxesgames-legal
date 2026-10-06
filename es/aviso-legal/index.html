@@ -19,7 +19,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/Sora[wght].ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=20261006a">
+<link rel="stylesheet" href="/assets/site.css?v=20261006b">
 <script data-goatcounter="https://sevenfoxes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body data-world="studio" class="">
@@ -38,6 +38,27 @@
     <div class="lang" aria-label="Sprache · Language · Idioma"><a href="/impressum/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/en/legal-notice/" hreflang="en" lang="en" title="English">EN</a><a href="/es/aviso-legal/" hreflang="es" lang="es" title="Español" aria-current="true">ES</a></div>
   </div>
 </header>
+<a class="launch-banner bb ev" href="/es/apps/bumblossom/#events" data-from="2026-10-22T22:00:00Z" data-until="2026-11-02T23:00:00Z" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_halloween.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>Halloween en el jardín</b> Jardín de la bruja y jardín tenebroso, solo hasta el 2 de noviembre.</span>
+    <span class="launch-cta">Más información &rarr;</span>
+  </span>
+</a>
+<a class="launch-banner bb ev" href="/es/apps/bumblossom/#events" data-from="2026-11-27T23:00:00Z" data-until="2026-12-24T23:00:00Z" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_advent.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>El calendario de Adviento de las abejas</b> Cada día una puerta con una parcela nueva, hasta Nochebuena.</span>
+    <span class="launch-cta">Más información &rarr;</span>
+  </span>
+</a>
+<a class="launch-banner bb ev" href="/es/apps/bumblossom/#events" data-from="2026-12-24T23:00:00Z" data-until="2027-01-06T23:00:00Z" hidden>
+  <span class="wrap">
+    <img src="/assets/img/bumblossom/events/icon_winter.png" alt="" width="40" height="40" loading="lazy">
+    <span class="launch-text"><b>Magia de invierno en el jardín</b> Fuegos artificiales de Nochevieja y puertas pendientes, hasta el 6 de enero.</span>
+    <span class="launch-cta">Más información &rarr;</span>
+  </span>
+</a>
 <a class="launch-banner bb" href="https://apps.apple.com/app/id6815565230" data-until="2026-10-15T07:00:00Z" rel="noopener">
   <span class="wrap">
     <img src="/assets/img/bumblossom/bee_y.png" alt="" width="40" height="40" loading="lazy">
@@ -52,7 +73,8 @@
     <span class="launch-cta">Descargar en el App Store &rarr;</span>
   </span>
 </a>
-<script>(function(){document.querySelectorAll(".launch-banner").forEach(function(b){if(Date.now()>Date.parse(b.dataset.until))b.remove();});})();</script>
+<script>(function(){var q=new URLSearchParams(location.search).get("jetzt"),n=q?Date.parse(q):Date.now();document.querySelectorAll(".launch-banner").forEach(function(b){
+if(n>Date.parse(b.dataset.until)||(b.dataset.from&&n<Date.parse(b.dataset.from)))b.remove();else b.hidden=false;});})();</script>
 <main id="main">
 
 <section class="section wrap legal">

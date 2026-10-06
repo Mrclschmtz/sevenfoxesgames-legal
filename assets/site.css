@@ -342,6 +342,20 @@ p { margin: 0 0 1em; }
   .launch-banner .launch-cta { margin-left: 52px; }
 }
 
+/* ---------- Bumblossom-Events (Produktseite + Banner, per Datum ein-/ausgeblendet) ---------- */
+.launch-banner[hidden], .ev-section[hidden], .ev-card[hidden] { display: none; }
+.ev-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.ev-card { background: #FFFDF6; color: #1A1511; border: 2px solid #3B2416; border-radius: 18px; overflow: hidden;
+  box-shadow: 0 4px 0 #3B2416; }
+.ev-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.ev-body { padding: 16px 18px 18px; }
+.ev-body h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; margin: 2px 0 6px; }
+.ev-body .muted { color: #5B4636; }
+.ev-state { font-size: .9rem; margin: 0; color: #5B4636; }
+.ev-state span { display: none; font-weight: 800; padding: 2px 10px; border-radius: 999px; margin-right: 4px; }
+.ev-card.is-now .ev-now { display: inline-block; background: #F4B41A; color: #1A1511; }
+.ev-card.is-soon .ev-soon { display: inline-block; background: #DDEDB9; color: #2F5A12; }
+
 /* ---------- Duell-Einladung (/duell/?c=…) ---------- */
 .invite-card { text-align: center; }
 .invite-card .actions { justify-content: center; margin-top: 18px; }
