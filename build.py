@@ -50,6 +50,8 @@ SLUGS = {
 CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
 # Seiten ohne Launch-Banner und ohne Sitemap-Eintrag (noindex): nur über einen geteilten Link erreichbar.
 UNLISTED = {"duel"}
+COUNTER_SNIPPET = '<script data-goatcounter="https://sevenfoxes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'
+NO_COUNTER = {"legal-kids"}
 
 
 def url(key, lang):
@@ -168,6 +170,9 @@ def build_page(template, key, lang, t):
         "{{brand_alt}}": "SevenFoxes Games",
         "{{og_image}}": BASE_URL + page.get("og_image", "/assets/og-default.png"),
         "{{robots}}": f'<meta name="robots" content="{page["robots"]}">\n' if page.get("robots") else "",
+        # Cookielose Besucherzählung (GoatCounter, Datenschutz Ziffer 4) – nicht auf der Datenschutzseite
+        # von Quizerra Kids, die aus der Kinder-App verlinkt ist (Apple Kids-Kategorie: keine Analyse-Dienste).
+        "{{counter}}": "" if key in NO_COUNTER else COUNTER_SNIPPET,
     }
     for k, v in repl.items():
         html = html.replace(k, v)
