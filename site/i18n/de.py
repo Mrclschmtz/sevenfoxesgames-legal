@@ -116,6 +116,7 @@ T = {
         "Alle Käufe und externen Links liegen hinter einer Elternsicherung (Rechenaufgabe)",
         "Einmalkäufe statt Abo: gekauft ist für immer gekauft, auf allen Geräten der Familie",
     ],
+    "guide_kids_link": "Ratgeber: Worauf Eltern bei Quiz-Apps achten sollten",
     "k_privacy_link": "Datenschutzerklärung Quizerra Kids",
     "k_ages_eyebrow": "Zwei Altersstufen",
     "k_ages_title": "Passende Fragen ab dem ersten Start",

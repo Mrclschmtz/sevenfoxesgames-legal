@@ -111,6 +111,7 @@ T = {
         "Todas las compras y enlaces externos están protegidos por un control parental (una operación matemática)",
         "Compras únicas en lugar de suscripción: lo comprado es para siempre, en todos los dispositivos de la familia",
     ],
+    "guide_kids_link": "Guía: en qué deben fijarse los padres en las apps de preguntas",
     "k_privacy_link": "Política de privacidad de Quizerra Kids",
     "k_ages_eyebrow": "Dos niveles de edad",
     "k_ages_title": "Preguntas adecuadas desde el primer inicio",

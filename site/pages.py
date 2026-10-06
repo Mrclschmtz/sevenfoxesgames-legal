@@ -327,6 +327,7 @@ def page_kids(t, lang, url):
       <p style="margin-top:10px">{t["k_parents_intro"]}</p>
       <ul>{parents}</ul>
       <p style="margin:16px 0 0"><a href="{url("legal-kids", lang)}#{lang}">{t["k_privacy_link"]}</a></p>
+      <p style="margin:8px 0 0"><a href="{url("guide-kids", lang)}">{t["guide_kids_link"]}</a></p>
     </div>
     <div>
       <p class="eyebrow">{t["k_ages_eyebrow"]}</p>
@@ -610,6 +611,54 @@ def page_duel(t, lang, url):
                 content=content, robots="noindex", og_image="/assets/img/quizerra/icon.png")
 
 
+def page_guide_kids(t, lang, url):
+    """Ratgeber für Eltern: Woran man eine gute Quiz-App für Kinder erkennt (site/guides.py)."""
+    from guides import guide_kids
+    g = guide_kids(lang)
+    checks = "".join(f"<li><h3>{h}</h3><p>{p}</p></li>" for h, p in g["checks"])
+    settings = "".join(f"<li>{x}</li>" for x in g["settings"])
+    example = "".join(f"<li>{x}</li>" for x in g["example"])
+    faq = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in g["faq"])
+    content = f'''
+<article class="guide">
+<section class="section wrap narrow guide-head">
+  <p class="eyebrow">{g["eyebrow"]}</p>
+  <h1>{g["title"]}</h1>
+  <p class="lead" style="margin-top:14px">{g["lead"]}</p>
+  <p class="muted guide-meta">{g["meta"]}</p>
+</section>
+<div class="wrap narrow">{pixels("g-1")}</div>
+<section class="section wrap narrow">
+  <h2>{g["check_title"]}</h2>
+  <p style="margin-top:10px">{g["check_intro"]}</p>
+  <ol class="steps guide-checks">{checks}</ol>
+</section>
+<section class="section wrap narrow">
+  <div class="note">
+    <h2 style="font-size:1.25rem;margin-bottom:10px">{g["settings_title"]}</h2>
+    <ul class="guide-list">{settings}</ul>
+  </div>
+</section>
+<section class="section wrap narrow">
+  <div class="parents guide-example">
+    <img class="guide-ella" src="/assets/img/kids/ella-think.png" alt="" width="140" loading="lazy">
+    <p class="eyebrow">{g["example_eyebrow"]}</p>
+    <h2>{g["example_title"]}</h2>
+    <p style="margin-top:10px">{g["example_intro"]}</p>
+    <ul>{example}</ul>
+    <div class="actions" style="margin-top:18px">{kids_cta(t)}
+      <a class="btn btn-ghost" href="{url("kids", lang)}">{g["example_more"]}</a></div>
+  </div>
+</section>
+<section class="section wrap narrow">
+  <h2>{g["faq_title"]}</h2>
+  <div class="faq" style="margin-top:14px">{faq}</div>
+</section>
+</article>'''
+    return dict(title=g["page_title"], description=g["desc"], world="sky", content=content,
+                og_image="/assets/img/kids/icon.png")
+
+
 def render(key, lang, t, url):
     if key == "home":
         return page_home(t, lang, url)
@@ -635,4 +684,6 @@ def render(key, lang, t, url):
         return page_legal("bumblossom", t, lang, url)
     if key == "duel":
         return page_duel(t, lang, url)
+    if key == "guide-kids":
+        return page_guide_kids(t, lang, url)
     raise KeyError(key)

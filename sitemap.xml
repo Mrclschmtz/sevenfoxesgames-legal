@@ -162,4 +162,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/bumblossom/"/>
   </url>
+  <url>
+    <loc>https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/en/guides/quiz-apps-for-kids/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+  </url>
 </urlset>

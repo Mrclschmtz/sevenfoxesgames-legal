@@ -25,7 +25,7 @@ import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20261006b"
+CSS_VERSION = "20261006g"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -46,6 +46,9 @@ SLUGS = {
     "legal-bumblossom": {"de": "bumblossom/",  "en": "en/bumblossom/",     "es": "es/bumblossom/"},
     # Ziel der Duell-Einladung aus der Quizerra-App (DuelInvite.swift, ?c=<Code>) – Pfade nicht ändern.
     "duel":           {"de": "duell/",         "en": "en/duel/",           "es": "es/duelo/"},
+    # Ratgeber (site/guides.py)
+    "guide-kids":     {"de": "ratgeber/quiz-apps-fuer-kinder/", "en": "en/guides/quiz-apps-for-kids/",
+                       "es": "es/guias/apps-de-preguntas-para-ninos/"},
 }
 CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
 # Seiten ohne Launch-Banner und ohne Sitemap-Eintrag (noindex): nur über einen geteilten Link erreichbar.
@@ -182,6 +185,21 @@ def structured_html(key, lang, page):
     banner = ""
     if key == "home":
         data = {"@context": "https://schema.org", **ORG}
+    elif key == "guide-kids":
+        data = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": page["title"].split(" – ")[0],
+            "description": page["description"],
+            "inLanguage": lang,
+            "url": BASE_URL + url(key, lang),
+            "image": BASE_URL + "/assets/img/kids/icon.png",
+            "datePublished": "2026-10-06",
+            "author": {"@type": "Organization", "name": ORG["name"], "url": ORG["url"]},
+            "publisher": {"@type": "Organization", "name": ORG["name"], "url": ORG["url"],
+                          "logo": {"@type": "ImageObject", "url": ORG["logo"]}},
+            "about": {"@type": "MobileApplication", "name": "Quizerra Kids", "operatingSystem": "iOS"},
+        }
     elif key in APPS_META:
         a = APPS_META[key]
         data = {
@@ -227,6 +245,8 @@ def build_page(template, key, lang, t):
         "{{cssv}}": CSS_VERSION,
         "{{footer}}": footer_html(t, lang),
         "{{footer_claim}}": t["footer_claim"],
+        "{{guide_url}}": url("guide-kids", lang),
+        "{{guide_label}}": t["guide_kids_link"],
         "{{skip}}": t["skip_to_content"],
         "{{brand_alt}}": "SevenFoxes Games",
         "{{og_image}}": BASE_URL + page.get("og_image", "/assets/og-default.png"),

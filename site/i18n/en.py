@@ -111,6 +111,7 @@ T = {
         "All purchases and external links sit behind a parental gate (a maths problem)",
         "One-time purchases instead of a subscription: bought means bought forever, on all the family's devices",
     ],
+    "guide_kids_link": "Guide: what parents should look for in quiz apps",
     "k_privacy_link": "Quizerra Kids privacy policy",
     "k_ages_eyebrow": "Two age levels",
     "k_ages_title": "The right questions from the first launch",
