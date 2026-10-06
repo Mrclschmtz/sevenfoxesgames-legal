@@ -25,7 +25,7 @@ import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20260929b"
+CSS_VERSION = "20261006a"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -44,8 +44,12 @@ SLUGS = {
     "legal-quizerra": {"de": "quizerra/",      "en": "en/quizerra/",       "es": "es/quizerra/"},
     "legal-kids":     {"de": "quizerra-kids/", "en": "en/quizerra-kids/",  "es": "es/quizerra-kids/"},
     "legal-bumblossom": {"de": "bumblossom/",  "en": "en/bumblossom/",     "es": "es/bumblossom/"},
+    # Ziel der Duell-Einladung aus der Quizerra-App (DuelInvite.swift, ?c=<Code>) – Pfade nicht ändern.
+    "duel":           {"de": "duell/",         "en": "en/duel/",           "es": "es/duelo/"},
 }
 CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
+# Seiten ohne Launch-Banner und ohne Sitemap-Eintrag (noindex): nur über einen geteilten Link erreichbar.
+UNLISTED = {"duel"}
 
 
 def url(key, lang):
@@ -90,7 +94,7 @@ def banner_html(t, lang, key):
     """Launch-Banner – auf allen Seiten außer den App-Rechtstexten: Bumblossom (01.10.2026) über
     Quizerra Kids (08.10.2026). Jedes blendet sich nach seinem Stichtag selbst aus, falls die Seite
     bis dahin nicht neu gebaut wurde."""
-    if key in CANONICAL_LANG:
+    if key in CANONICAL_LANG or key in UNLISTED:
         return ""
     out = []
     # Bumblossom: vor dem Launch „erscheint am 1. Oktober“, danach zwei Wochen „ist da“
@@ -163,6 +167,7 @@ def build_page(template, key, lang, t):
         "{{skip}}": t["skip_to_content"],
         "{{brand_alt}}": "SevenFoxes Games",
         "{{og_image}}": BASE_URL + page.get("og_image", "/assets/og-default.png"),
+        "{{robots}}": f'<meta name="robots" content="{page["robots"]}">\n' if page.get("robots") else "",
     }
     for k, v in repl.items():
         html = html.replace(k, v)
@@ -177,6 +182,8 @@ def write_sitemap(entries):
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
              'xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for key in SLUGS:
+        if key in UNLISTED:
+            continue
         for lang in LANGS:
             if key in CANONICAL_LANG and lang != CANONICAL_LANG[key]:
                 continue

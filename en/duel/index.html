@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duel invitation – Quizerra</title>
+<meta name="description" content="You’ve been challenged to a duel in Quizerra. Get the app and join with the invite code.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://sevenfoxes.de/en/duel/">
+<link rel="alternate" hreflang="de" href="https://sevenfoxes.de/duell/">
+<link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/duel/">
+<link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/duelo/">
+<link rel="alternate" hreflang="x-default" href="https://sevenfoxes.de/duell/">
+<meta property="og:title" content="Duel invitation – Quizerra">
+<meta property="og:description" content="You’ve been challenged to a duel in Quizerra. Get the app and join with the invite code.">
+<meta property="og:image" content="https://sevenfoxes.de/assets/img/quizerra/icon.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6EDE4">
+<link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/Sora[wght].ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=20261006a">
+</head>
+<body data-world="noir" class="">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/en/" aria-label="SevenFoxes Games">
+      <span class="brand-tile"><img src="/assets/logo-mark.svg" alt="" width="36" height="36"></span>
+      <span class="brand-word">SEVEN<b>FOXES</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation">
+      <a href="/en/apps/">Apps</a>
+      <a href="/en/contact/">Contact</a>
+    </nav>
+    <div class="lang" aria-label="Sprache · Language · Idioma"><a href="/duell/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/en/duel/" hreflang="en" lang="en" title="English" aria-current="true">EN</a><a href="/es/duelo/" hreflang="es" lang="es" title="Español">ES</a></div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section wrap narrow duel-invite">
+  <div class="app-name"><img src="/assets/img/quizerra/icon.png" alt="" width="64" height="64">
+    <span><span class="display">QUIZ<b>ERRA</b></span></span></div>
+  <p class="eyebrow" style="margin-top:24px">Duel invitation</p>
+  <h1>You’ve been challenged to a duel!</h1>
+  <p class="lead" style="margin-top:12px">Same questions, each in your own language: 5 rounds, 3 questions each, 15 seconds per question. Get Quizerra for free and take on your friend.</p>
+  <div class="contact-card invite-card">
+    <div id="invite-code" hidden>
+      <p class="eyebrow">Your invite code</p>
+      <p class="invite-code" id="invite-code-value"></p>
+    </div>
+    <p class="muted" id="invite-nocode">You’ll find the invite code in your friend’s message.</p>
+    <div class="actions">
+      <a class="btn btn-store" href="https://apps.apple.com/app/id6789493203" rel="noopener"><span class="apple" aria-hidden="true">&#63743;</span><span>Download on the App Store<br><small>Free · iPhone & iPad</small></span></a>
+      <a class="btn btn-accent btn-open" id="invite-open" href="quizerra://duell" hidden><span>Open duel<br><small>Quizerra already installed</small></span></a>
+    </div>
+  </div>
+  <h2 style="font-size:1.3rem">How it works</h2>
+  <ol class="steps" style="margin-top:16px"><li>Download Quizerra for free from the App Store and sign in to Game Center.</li><li>Tap “Open duel” here – or in the app, go to “Duel” → “Challenge a friend” → “Enter invite code”.</li><li>Enter the code if it isn’t filled in already. That’s it – you’re in the same duel.</li></ol>
+  <p class="muted" style="margin-top:28px">The link only contains the code, no personal data. The duel runs on Apple’s Game Center.</p>
+</section>
+<script>(function(){
+  var c=(new URLSearchParams(location.search).get("c")||"").replace(/\D/g,"");
+  if(!/^[1-9][0-9]{5}$/.test(c))return;
+  document.getElementById("invite-code-value").textContent=c.slice(0,3)+"\u2009"+c.slice(3);
+  document.getElementById("invite-code").hidden=false;
+  document.getElementById("invite-nocode").hidden=true;
+  var o=document.getElementById("invite-open");o.href="quizerra://duell?c="+c;o.hidden=false;
+  document.querySelectorAll(".lang a").forEach(function(a){a.href=a.getAttribute("href")+"?c="+c;});
+})();</script>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-brand">
+      <span class="brand-word">SEVEN<b>FOXES</b> <span class="games">GAMES</span></span>
+      <p class="foot-claim">Independent game studio from Germany. Games for iPhone and iPad.</p>
+    </div>
+    <nav class="foot-links" aria-label="Rechtliches · Legal">
+        <a href="/en/legal-notice/">Legal notice</a>
+        <a href="/en/privacy/">Privacy (website)</a>
+        <a href="/en/quizerra/#en">Privacy – Quizerra</a>
+        <a href="/en/quizerra-kids/#en">Privacy – Quizerra Kids</a>
+        <a href="/en/bumblossom/#en">Privacy – Bumblossom</a>
+    </nav>
+    <p class="foot-copy"><span class="c">©</span> 2026 SevenFoxes Games · Marcel Krause</p>
+  </div>
+</footer>
+</body>
+</html>

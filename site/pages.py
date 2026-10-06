@@ -533,6 +533,46 @@ def page_legal(app, t, lang, url):
     return dict(title=title, description=desc, world="studio", content=content)
 
 
+def page_duel(t, lang, url):
+    """Einladung zum Quizerra-Duell (Link aus der App: /duell/?c=482913). Der Code steht nur in der
+    URL; ein kleines Skript zeigt ihn an und baut den Deep Link quizerra://duell?c=… – nichts wird
+    gespeichert oder übertragen. Ohne Code bleibt die Seite eine allgemeine Einladung."""
+    steps = "".join(f"<li>{s}</li>" for s in t["duel_how"])
+    content = f'''
+<section class="section wrap narrow duel-invite">
+  <div class="app-name"><img src="/assets/img/quizerra/icon.png" alt="" width="64" height="64">
+    <span>{quizerra_word()}</span></div>
+  <p class="eyebrow" style="margin-top:24px">{t["duel_eyebrow"]}</p>
+  <h1>{t["duel_title"]}</h1>
+  <p class="lead" style="margin-top:12px">{t["duel_lead"]}</p>
+  <div class="contact-card invite-card">
+    <div id="invite-code" hidden>
+      <p class="eyebrow">{t["duel_code_label"]}</p>
+      <p class="invite-code" id="invite-code-value"></p>
+    </div>
+    <p class="muted" id="invite-nocode">{t["duel_nocode"]}</p>
+    <div class="actions">
+      {store_button(t)}
+      <a class="btn btn-accent btn-open" id="invite-open" href="quizerra://duell" hidden><span>{t["duel_open"]}<br><small>{t["duel_open_small"]}</small></span></a>
+    </div>
+  </div>
+  <h2 style="font-size:1.3rem">{t["duel_how_title"]}</h2>
+  <ol class="steps" style="margin-top:16px">{steps}</ol>
+  <p class="muted" style="margin-top:28px">{t["duel_privacy"]}</p>
+</section>
+<script>(function(){{
+  var c=(new URLSearchParams(location.search).get("c")||"").replace(/\\D/g,"");
+  if(!/^[1-9][0-9]{{5}}$/.test(c))return;
+  document.getElementById("invite-code-value").textContent=c.slice(0,3)+"\\u2009"+c.slice(3);
+  document.getElementById("invite-code").hidden=false;
+  document.getElementById("invite-nocode").hidden=true;
+  var o=document.getElementById("invite-open");o.href="quizerra://duell?c="+c;o.hidden=false;
+  document.querySelectorAll(".lang a").forEach(function(a){{a.href=a.getAttribute("href")+"?c="+c;}});
+}})();</script>'''
+    return dict(title=t["duel_page_title"], description=t["duel_desc"], world="noir",
+                content=content, robots="noindex", og_image="/assets/img/quizerra/icon.png")
+
+
 def render(key, lang, t, url):
     if key == "home":
         return page_home(t, lang, url)
@@ -556,4 +596,6 @@ def render(key, lang, t, url):
         return page_legal("quizerra-kids", t, lang, url)
     if key == "legal-bumblossom":
         return page_legal("bumblossom", t, lang, url)
+    if key == "duel":
+        return page_duel(t, lang, url)
     raise KeyError(key)

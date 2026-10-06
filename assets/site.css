@@ -341,3 +341,11 @@ p { margin: 0 0 1em; }
   .launch-banner .launch-text { flex-basis: calc(100% - 52px); font-size: .93rem; }
   .launch-banner .launch-cta { margin-left: 52px; }
 }
+
+/* ---------- Duell-Einladung (/duell/?c=…) ---------- */
+.invite-card { text-align: center; }
+.invite-card .actions { justify-content: center; margin-top: 18px; }
+.invite-code { font-family: var(--font-pixel); font-size: clamp(2.6rem, 9vw, 3.6rem); letter-spacing: .08em;
+  color: var(--lime); margin: 4px 0 0; line-height: 1.1; }
+.btn-open small { font-family: var(--font-pixel); font-weight: 500; font-size: .8rem; opacity: .75; letter-spacing: .04em; }
+.btn-open[hidden], .duel-invite [hidden] { display: none; }
