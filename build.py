@@ -156,6 +156,57 @@ def footer_html(t, lang):
     return "\n        ".join(links)
 
 
+# Strukturierte Daten (schema.org, JSON-LD) und Apples Smart-App-Banner für Google bzw. Safari.
+# Bewusst ohne Bewertungen (aggregateRating): die Sterne stammen aus dem App Store, nicht von dieser Seite.
+APPS_META = {
+    "quizerra":   {"name": "Quizerra", "id": "6789493203", "icon": "/assets/img/quizerra/icon.png",
+                   "genre": "Quiz", "devices": "iPhone, iPad"},
+    "kids":       {"name": "Quizerra Kids", "id": "6808029347", "icon": "/assets/img/kids/icon.png",
+                   "genre": "Educational", "devices": "iPhone, iPad"},
+    "bumblossom": {"name": "Bumblossom", "id": "6815565230", "icon": "/assets/img/bumblossom/icon.png",
+                   "genre": "Puzzle", "devices": "iPhone"},
+}
+ORG = {
+    "@type": "Organization",
+    "name": "SevenFoxes Games",
+    "url": BASE_URL + "/",
+    "logo": BASE_URL + "/assets/apple-touch-icon.png",
+    "email": "kontakt@sevenfoxes.de",
+    "sameAs": ["https://www.instagram.com/sevenfoxes_games/"],
+}
+
+
+def structured_html(key, lang, page):
+    import json
+    data = None
+    banner = ""
+    if key == "home":
+        data = {"@context": "https://schema.org", **ORG}
+    elif key in APPS_META:
+        a = APPS_META[key]
+        data = {
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": a["name"],
+            "description": page["description"],
+            "url": BASE_URL + url(key, lang),
+            "image": BASE_URL + a["icon"],
+            "operatingSystem": "iOS",
+            "applicationCategory": "GameApplication",
+            "applicationSubCategory": a["genre"],
+            "availableOnDevice": a["devices"],
+            "installUrl": f"https://apps.apple.com/app/id{a['id']}",
+            "inLanguage": lang,
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+            "publisher": {"@type": "Organization", "name": ORG["name"], "url": ORG["url"]},
+        }
+        banner = f'<meta name="apple-itunes-app" content="app-id={a["id"]}">\n'
+    if not data:
+        return ""
+    js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return banner + f'<script type="application/ld+json">{js}</script>\n'
+
+
 def build_page(template, key, lang, t):
     page = pages.render(key, lang, t, url)
     canonical_lang = CANONICAL_LANG.get(key, lang)
@@ -183,6 +234,7 @@ def build_page(template, key, lang, t):
         # Cookielose Besucherzählung (GoatCounter, Datenschutz Ziffer 4) – nicht auf der Datenschutzseite
         # von Quizerra Kids, die aus der Kinder-App verlinkt ist (Apple Kids-Kategorie: keine Analyse-Dienste).
         "{{counter}}": "" if key in NO_COUNTER else COUNTER_SNIPPET,
+        "{{structured}}": structured_html(key, lang, page),
     }
     for k, v in repl.items():
         html = html.replace(k, v)
