@@ -565,7 +565,7 @@ def page_legal(app, t, lang, url):
     content = f'''
 <section class="section wrap legal">
   <p class="brand-line">{word}</p>
-  <p class="lang-switch"><a href="#de" hreflang="de">Deutsch</a> <a href="#en" hreflang="en">English</a> <a href="#es" hreflang="es">Español</a></p>
+  <p class="lang-switch"><a href="#de" hreflang="de">Deutsch</a> <a href="#en" hreflang="en">English</a> <a href="#es" hreflang="es">Español</a>{' <a href="#fr" hreflang="fr">Français</a>' if app == "quizerra-kids" else ''}</p>
 {body}
 </section>'''
     return dict(title=title, description=desc, world="studio", content=content)
