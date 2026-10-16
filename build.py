@@ -25,7 +25,7 @@ import pages  # noqa: E402  (liegt in site/)
 
 LANGS = ("de", "en", "es")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20261006g"
+CSS_VERSION = "20261016a"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
@@ -49,10 +49,12 @@ SLUGS = {
     # Ratgeber (site/guides.py)
     "guide-kids":     {"de": "ratgeber/quiz-apps-fuer-kinder/", "en": "en/guides/quiz-apps-for-kids/",
                        "es": "es/guias/apps-de-preguntas-para-ninos/"},
+    # 404: GitHub Pages liefert bei unbekannten Pfaden genau EINE Datei, /404.html (alle Sprachen darin, noindex).
+    "notfound":       {"de": "404.html", "en": "404.html", "es": "404.html"},
 }
 CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
 # Seiten ohne Launch-Banner und ohne Sitemap-Eintrag (noindex): nur über einen geteilten Link erreichbar.
-UNLISTED = {"duel"}
+UNLISTED = {"duel", "notfound"}
 COUNTER_SNIPPET = '<script data-goatcounter="https://sevenfoxes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'
 NO_COUNTER = {"legal-kids"}
 
@@ -228,6 +230,7 @@ def structured_html(key, lang, page):
 def build_page(template, key, lang, t):
     page = pages.render(key, lang, t, url)
     canonical_lang = CANONICAL_LANG.get(key, lang)
+    canonical_key = "home" if key == "notfound" else key
     html = template
     repl = {
         "{{lang}}": lang,
@@ -235,8 +238,8 @@ def build_page(template, key, lang, t):
         "{{description}}": page["description"],
         "{{world}}": page.get("world", "studio"),
         "{{bodyclass}}": page.get("bodyclass", ""),
-        "{{canonical}}": BASE_URL + url(key, canonical_lang),
-        "{{alternates}}": alternates_html(key),
+        "{{canonical}}": BASE_URL + url(canonical_key, canonical_lang),
+        "{{alternates}}": "" if key == "notfound" else alternates_html(key),
         "{{nav}}": nav_html(t, lang, key),
         "{{langswitch}}": langswitch_html(key, lang),
         "{{home}}": url("home", lang),
@@ -290,8 +293,10 @@ def main():
     for lang in LANGS:
         t = load_strings(lang)
         for key in SLUGS:
+            if key == "notfound" and lang != "de":
+                continue  # eine Datei für alle Sprachen
             html = build_page(template, key, lang, t)
-            out = ROOT / SLUGS[key][lang] / "index.html"
+            out = ROOT / "404.html" if key == "notfound" else ROOT / SLUGS[key][lang] / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(html)
             written.append(out.relative_to(ROOT))

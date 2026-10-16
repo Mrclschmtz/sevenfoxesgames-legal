@@ -270,4 +270,19 @@ T = {
     'banner_ev_halloween': 'Witch and Spooky Garden, only until November 2.',
     'banner_ev_advent': 'A new bed behind every door – until Christmas Eve.',
     'banner_ev_winter': "New Year's fireworks and catch-up doors – until January 6.",
+
+    # 404-Seite
+    'nf_page_title': 'Page not found – SevenFoxes Games',
+    'nf_desc': 'This page does not exist. Go to the home page, the apps or the contact page.',
+    'nf_eyebrow': 'Error 404',
+    'nf_title': 'This page is hiding in the fox den.',
+    'nf_lead': 'The address no longer exists, or never did. No problem, here is a quiz question to make up for it:',
+    'nf_question': 'Where would you like to go now?',
+    'nf_a': 'Home page',
+    'nf_a_sub': 'All our games at a glance',
+    'nf_b': 'Our apps',
+    'nf_b_sub': 'Quizerra, Quizerra Kids, Bumblossom',
+    'nf_c': 'Write to us',
+    'nf_c_sub': 'If a link is broken, we will say thank you',
+    'nf_hint': 'All three answers are correct.',
 }

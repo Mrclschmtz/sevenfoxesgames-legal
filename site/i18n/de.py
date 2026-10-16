@@ -280,4 +280,19 @@ T = {
     'banner_ev_halloween': 'Hexen- und Gruselgarten, nur bis 2. November.',
     'banner_ev_advent': 'Jeden Tag ein Türchen mit neuem Beet – bis Heiligabend.',
     'banner_ev_winter': 'Silvester-Feuerwerk und Türchen nachholen – bis 6. Januar.',
+
+    # 404-Seite
+    'nf_page_title': 'Seite nicht gefunden – SevenFoxes Games',
+    'nf_desc': 'Diese Seite gibt es nicht. Zur Startseite, zu den Apps oder zum Kontakt.',
+    'nf_eyebrow': 'Fehler 404',
+    'nf_title': 'Diese Seite hat sich im Fuchsbau versteckt.',
+    'nf_lead': 'Die Adresse gibt es nicht mehr oder sie war nie da. Macht nichts, eine Quizfrage zum Trost:',
+    'nf_question': 'Wo soll es jetzt hingehen?',
+    'nf_a': 'Zur Startseite',
+    'nf_a_sub': 'Alle Spiele auf einen Blick',
+    'nf_b': 'Zu den Apps',
+    'nf_b_sub': 'Quizerra, Quizerra Kids, Bumblossom',
+    'nf_c': 'Schreib uns',
+    'nf_c_sub': 'Wenn ein Link kaputt ist, sagen wir Danke',
+    'nf_hint': 'Alle drei Antworten sind richtig.',
 }

@@ -270,4 +270,19 @@ T = {
     'banner_ev_halloween': 'Jardín de la bruja y jardín tenebroso, solo hasta el 2 de noviembre.',
     'banner_ev_advent': 'Cada día una puerta con una parcela nueva, hasta Nochebuena.',
     'banner_ev_winter': 'Fuegos artificiales de Nochevieja y puertas pendientes, hasta el 6 de enero.',
+
+    # 404-Seite
+    'nf_page_title': 'Página no encontrada – SevenFoxes Games',
+    'nf_desc': 'Esta página no existe. Ve a la página de inicio, a las apps o al contacto.',
+    'nf_eyebrow': 'Error 404',
+    'nf_title': 'Esta página se ha escondido en la madriguera del zorro.',
+    'nf_lead': 'La dirección ya no existe o nunca existió. No pasa nada, aquí va una pregunta de consuelo:',
+    'nf_question': '¿Adónde quieres ir ahora?',
+    'nf_a': 'A la página de inicio',
+    'nf_a_sub': 'Todos nuestros juegos de un vistazo',
+    'nf_b': 'A las apps',
+    'nf_b_sub': 'Quizerra, Quizerra Kids, Bumblossom',
+    'nf_c': 'Escríbenos',
+    'nf_c_sub': 'Si un enlace está roto, te damos las gracias',
+    'nf_hint': 'Las tres respuestas son correctas.',
 }

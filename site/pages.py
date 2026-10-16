@@ -4,6 +4,7 @@ render(key, lang, t, url) liefert Titel, Beschreibung, Welt und den HTML-Inhalt
 einer Seite. Die Texte kommen aus site/i18n/<lang>.py (Dict T), die Rechtstexte
 der Apps liegen fertig in site/legal/. Keine Abhängigkeiten außer der Stdlib.
 """
+import importlib
 import pathlib
 import random
 
@@ -659,6 +660,37 @@ def page_guide_kids(t, lang, url):
                 og_image="/assets/img/kids/icon.png")
 
 
+def page_notfound(url):
+    """404-Seite: EINE Datei für alle Sprachen (GitHub Pages liefert nur /404.html). Alle drei Fassungen
+    stehen im HTML; ein kleines Skript blendet die Fassung zum Pfad (/en/…, /es/…) ein, sonst Deutsch."""
+    blocks = []
+    for lang in ("de", "en", "es"):
+        t = importlib.import_module(f"i18n.{lang}").T
+        answers = [("A", t["nf_a"], t["nf_a_sub"], url("home", lang)),
+                   ("B", t["nf_b"], t["nf_b_sub"], url("apps", lang)),
+                   ("C", t["nf_c"], t["nf_c_sub"], url("contact", lang))]
+        rows = "".join(f'''<a class="nf-answer" href="{href}"><span class="nf-letter">{l}</span>
+      <span class="nf-text"><b>{a}</b><small>{sub}</small></span></a>''' for l, a, sub, href in answers)
+        blocks.append(f'''<section class="section wrap narrow nf" lang="{lang}" data-lang="{lang}"{"" if lang == "de" else " hidden"}>
+  <p class="eyebrow">{t["nf_eyebrow"]}</p>
+  <p class="nf-code" aria-hidden="true">404</p>
+  <h1>{t["nf_title"]}</h1>
+  <p class="lead" style="margin-top:12px">{t["nf_lead"]}</p>
+  <div class="contact-card nf-card">
+    <p class="nf-q">{t["nf_question"]}</p>
+    {rows}
+    <p class="muted nf-hint">{t["nf_hint"]}</p>
+  </div>
+</section>''')
+    content = f'''
+<div class="hero nf-hero wrap" aria-hidden="true">{hero_pixels(seed=404, count=22)}</div>
+{"".join(blocks)}
+<script>(function(){{var m=location.pathname.match(/^\/(en|es)(\/|$)/),l=m?m[1]:"de";
+document.querySelectorAll(".nf").forEach(function(s){{s.hidden=s.dataset.lang!==l;}});document.documentElement.lang=l;}})();</script>'''
+    t = importlib.import_module("i18n.de").T
+    return dict(title=t["nf_page_title"], description=t["nf_desc"], world="studio", content=content, robots="noindex")
+
+
 def render(key, lang, t, url):
     if key == "home":
         return page_home(t, lang, url)
@@ -686,4 +718,6 @@ def render(key, lang, t, url):
         return page_duel(t, lang, url)
     if key == "guide-kids":
         return page_guide_kids(t, lang, url)
+    if key == "notfound":
+        return page_notfound(url)
     raise KeyError(key)
