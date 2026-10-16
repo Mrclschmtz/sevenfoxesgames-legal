@@ -260,7 +260,7 @@ T = {
     'duel_open': 'Ouvrir le duel',
     'duel_open_small': 'Quizerra est déjà installé',
     'duel_how_title': 'Comment ça marche',
-    'duel_how': ['Téléchargez Quizerra gratuitement dans l’App Store et connectez-vous à Game Center.', 'Touchez ici « Ouvrir le duel » – ou, dans l’app, ouvrez « Duel » → « Défier un ami » → « Saisir le code d’invitation ».', 'Saisissez le code s’il n’est pas déjà rempli. Et voilà, vous êtes dans le même duel.'],
+    'duel_how': ['Téléchargez Quizerra gratuitement dans l’App Store et connectez-vous à Game Center.', 'Touchez ici « Ouvrir le duel » – ou, dans l’app (qui s’affiche en anglais), ouvrez “Duel” → “Challenge a friend” → “Enter invite code”.', 'Saisissez le code s’il n’est pas déjà rempli. Et voilà, vous êtes dans le même duel.'],
     'duel_nocode': 'Vous trouverez le code d’invitation dans le message de votre ami.',
     'duel_privacy': 'Le lien ne contient que le code, aucune donnée personnelle. Le duel passe par le Game Center d’Apple.',
     # Events (Bumblossom), Banner + Abschnitt auf der Produktseite
