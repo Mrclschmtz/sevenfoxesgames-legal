@@ -44,7 +44,7 @@ T = {
     ),
     "home_principles": [
         ("Pas de compte, pas de serveurs", "Vos sauvegardes restent sur votre appareil. Nous n’exploitons aucun serveur et ne collectons rien."),
-        ("Trois langues, un seul catalogue", "Allemand, anglais et espagnol – chaque question est formulée et vérifiée séparément dans chaque langue. Quizerra Kids existe en plus en français."),
+        ("Quatre langues, un seul catalogue", "Allemand, anglais, espagnol et français – chaque question est formulée et vérifiée séparément dans chaque langue."),
         ("Sans publicité pour les enfants", "Quizerra Kids se passe de publicité et de pistage. Tout ce qui coûte de l’argent se trouve derrière un contrôle parental."),
     ],
 
@@ -55,12 +55,12 @@ T = {
 
     # Quizerra
     "q_page_title": "Quizerra – Quiz de culture générale contre la montre",
-    "q_desc": "Quizerra est un quiz de culture générale rapide pour iPhone et iPad : 1 100 questions dans 11 catégories, deux minutes par manche, défi quotidien, 55 emblèmes à collectionner. Gratuit, disponible en allemand, anglais et espagnol.",
+    "q_desc": "Quizerra est un quiz de culture générale rapide pour iPhone et iPad : 1 100 questions dans 11 catégories, deux minutes par manche, défi quotidien, 55 emblèmes à collectionner. Gratuit, disponible en allemand, anglais, espagnol et français.",
     "q_subtitle": "Quiz de culture générale contre la montre",
     "q_teaser": "Choisissez une catégorie et répondez à autant de questions que possible en deux minutes. Chaque bonne réponse rapporte des points, les séries rapportent un bonus.",
     "q_lead": "Que savez-vous vraiment ? Découvrez-le en deux minutes – avec 1 100 questions dans 11 catégories, pour tous ceux qui aiment réfléchir, apprendre et battre leur meilleur score.",
-    "q_facts": ["1 100 questions", "11 catégories", "3 langues", "Gratuit"],
-    "q_stats": [("1 100", "questions"), ("11", "catégories"), ("2 min", "par manche"), ("3", "langues")],
+    "q_facts": ["1 100 questions", "11 catégories", "4 langues", "Gratuit"],
+    "q_stats": [("1 100", "questions"), ("11", "catégories"), ("2 min", "par manche"), ("4", "langues")],
     "q_shot_alt": "Menu principal de Quizerra avec les catégories, l’indicateur de niveau et le défi quotidien",
     "q_how_eyebrow": "Comment jouer",
     "q_how_title": "Deux minutes, concentration maximale",
@@ -255,12 +255,12 @@ T = {
     'duel_desc': 'On vous défie en duel dans Quizerra. Téléchargez l’app et relevez le défi avec le code d’invitation.',
     'duel_eyebrow': 'Invitation à un duel',
     'duel_title': 'On vous défie en duel !',
-    'duel_lead': 'Les mêmes questions, chacun dans sa langue (allemand, anglais ou espagnol) : 5 manches de 3 questions, 15 secondes par question. Téléchargez Quizerra gratuitement et affrontez votre ami.',
+    'duel_lead': 'Les mêmes questions, chacun dans sa langue (allemand, anglais, espagnol ou français) : 5 manches de 3 questions, 15 secondes par question. Téléchargez Quizerra gratuitement et affrontez votre ami.',
     'duel_code_label': 'Votre code d’invitation',
     'duel_open': 'Ouvrir le duel',
     'duel_open_small': 'Quizerra est déjà installé',
     'duel_how_title': 'Comment ça marche',
-    'duel_how': ['Téléchargez Quizerra gratuitement dans l’App Store et connectez-vous à Game Center.', 'Touchez ici « Ouvrir le duel » – ou, dans l’app (qui s’affiche en anglais), ouvrez “Duel” → “Challenge a friend” → “Enter invite code”.', 'Saisissez le code s’il n’est pas déjà rempli. Et voilà, vous êtes dans le même duel.'],
+    'duel_how': ['Téléchargez Quizerra gratuitement dans l’App Store et connectez-vous à Game Center.', 'Touchez ici « Ouvrir le duel » – ou, dans l’app, ouvrez « Duel » → « Défier un ami » → « Saisir le code d’invitation ».', 'Saisissez le code s’il n’est pas déjà rempli. Et voilà, vous êtes dans le même duel.'],
     'duel_nocode': 'Vous trouverez le code d’invitation dans le message de votre ami.',
     'duel_privacy': 'Le lien ne contient que le code, aucune donnée personnelle. Le duel passe par le Game Center d’Apple.',
     # Events (Bumblossom), Banner + Abschnitt auf der Produktseite

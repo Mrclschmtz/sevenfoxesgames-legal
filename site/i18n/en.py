@@ -35,14 +35,14 @@ T = {
     "home_studio_title": "Small, independent, built by hand",
     "home_studio_text": (
         "<p>SevenFoxes Games is a one-person studio. Every question in our apps is written by hand and "
-        "checked in three languages – not translated, but phrased the way you would actually ask it "
+        "checked in four languages – not translated, but phrased the way you would actually ask it "
         "in each language.</p>"
         "<p>We build the games we like to play ourselves: quick to start, no sign-up, no waiting, "
         "and no tricks designed to keep you hooked longer than you want to be.</p>"
     ),
     "home_principles": [
         ("No account, no servers", "Your progress stays on your device. We run no servers of our own and collect nothing."),
-        ("Three languages, one catalog", "English, German and Spanish – every question written and checked separately in each language."),
+        ("Four languages, one catalog", "English, German, Spanish and French – every question written and checked separately in each language."),
         ("Ad-free for kids", "Quizerra Kids has no ads and no tracking. Anything that costs money sits behind a parental gate."),
     ],
 
@@ -51,12 +51,12 @@ T = {
     "apps_lead": "A trivia game against the clock for grown-ups, an ad-free quiz with a sticker book for children, and a bee puzzle in which 400 flower beds come into bloom.",
 
     "q_page_title": "Quizerra – trivia against the clock",
-    "q_desc": "Quizerra is a fast-paced trivia game for iPhone and iPad: 1,100 questions across 11 categories, two minutes per round, a daily challenge and 55 emblems to collect. Free, in English, German and Spanish.",
+    "q_desc": "Quizerra is a fast-paced trivia game for iPhone and iPad: 1,100 questions across 11 categories, two minutes per round, a daily challenge and 55 emblems to collect. Free, in English, German, Spanish and French.",
     "q_subtitle": "Trivia against the clock",
     "q_teaser": "Pick a category and answer as many questions as you can in two minutes. Every correct answer scores, streaks earn a bonus.",
     "q_lead": "How much do you really know? Find out in two minutes – with 1,100 questions across 11 categories, for everyone who loves to think, learn something new and beat their own high score.",
-    "q_facts": ["1,100 questions", "11 categories", "3 languages", "Free"],
-    "q_stats": [("1,100", "questions"), ("11", "categories"), ("2 min", "per round"), ("3", "languages")],
+    "q_facts": ["1,100 questions", "11 categories", "4 languages", "Free"],
+    "q_stats": [("1,100", "questions"), ("11", "categories"), ("2 min", "per round"), ("4", "languages")],
     "q_shot_alt": "Quizerra main menu with categories, level indicator and daily challenge",
     "q_how_eyebrow": "How to play",
     "q_how_title": "Two minutes, full focus",

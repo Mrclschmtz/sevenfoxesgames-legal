@@ -35,14 +35,14 @@ T = {
     "home_studio_title": "Pequeño, independiente, hecho a mano",
     "home_studio_text": (
         "<p>SevenFoxes Games es un estudio de una sola persona. Cada pregunta de nuestras apps está escrita "
-        "a mano y revisada en tres idiomas: no traducida, sino formulada tal como se preguntaría de verdad "
+        "a mano y revisada en cuatro idiomas: no traducida, sino formulada tal como se preguntaría de verdad "
         "en cada idioma.</p>"
         "<p>Hacemos los juegos que nos gusta jugar: rápidos de empezar, sin registro, sin esperas y sin "
         "trucos pensados para retenerte más tiempo del que quieres.</p>"
     ),
     "home_principles": [
         ("Sin cuenta, sin servidores", "Tu progreso se queda en tu dispositivo. No tenemos servidores propios y no recopilamos nada."),
-        ("Tres idiomas, un catálogo", "Español, alemán e inglés: cada pregunta escrita y revisada por separado en cada idioma."),
+        ("Cuatro idiomas, un catálogo", "Español, alemán, inglés y francés: cada pregunta escrita y revisada por separado en cada idioma."),
         ("Sin publicidad para los niños", "Quizerra Kids no tiene anuncios ni rastreo. Todo lo que cuesta dinero está detrás de un control parental."),
     ],
 
@@ -51,12 +51,12 @@ T = {
     "apps_lead": "Un trivial contrarreloj para adultos, un quiz sin publicidad con álbum de pegatinas para niños y un puzle de abejas en el que florecen 400 bancales.",
 
     "q_page_title": "Quizerra – trivial contrarreloj",
-    "q_desc": "Quizerra es un juego de preguntas rápido para iPhone y iPad: 1.100 preguntas en 11 categorías, dos minutos por ronda, reto diario y 55 emblemas por coleccionar. Gratis, en español, alemán e inglés.",
+    "q_desc": "Quizerra es un juego de preguntas rápido para iPhone y iPad: 1.100 preguntas en 11 categorías, dos minutos por ronda, reto diario y 55 emblemas por coleccionar. Gratis, en español, alemán, inglés y francés.",
     "q_subtitle": "Trivial contrarreloj",
     "q_teaser": "Elige una categoría y responde tantas preguntas como puedas en dos minutos. Cada acierto suma puntos y las rachas dan bonus.",
     "q_lead": "¿Cuánto sabes de verdad? Descúbrelo en dos minutos, con 1.100 preguntas en 11 categorías, para quienes disfrutan pensando, aprendiendo cosas nuevas y superando su récord.",
-    "q_facts": ["1.100 preguntas", "11 categorías", "3 idiomas", "Gratis"],
-    "q_stats": [("1.100", "preguntas"), ("11", "categorías"), ("2 min", "por ronda"), ("3", "idiomas")],
+    "q_facts": ["1.100 preguntas", "11 categorías", "4 idiomas", "Gratis"],
+    "q_stats": [("1.100", "preguntas"), ("11", "categorías"), ("2 min", "por ronda"), ("4", "idiomas")],
     "q_shot_alt": "Menú principal de Quizerra con categorías, indicador de nivel y reto diario",
     "q_how_eyebrow": "Cómo se juega",
     "q_how_title": "Dos minutos, toda la concentración",

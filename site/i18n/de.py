@@ -37,14 +37,14 @@ T = {
     "home_studio_title": "Klein, unabhängig, selbst gebaut",
     "home_studio_text": (
         "<p>SevenFoxes Games ist ein Ein-Personen-Studio. Jede Frage in unseren Apps ist von Hand "
-        "geschrieben und in drei Sprachen geprüft – nicht übersetzt, sondern jeweils so formuliert, "
+        "geschrieben und in vier Sprachen geprüft – nicht übersetzt, sondern jeweils so formuliert, "
         "wie man es in der Sprache tatsächlich fragen würde.</p>"
         "<p>Wir bauen Spiele, die wir selbst gern spielen: schnell zu starten, ohne Anmeldung, "
         "ohne Wartezeiten und ohne Tricks, die einen länger festhalten sollen als man möchte.</p>"
     ),
     "home_principles": [
         ("Kein Konto, keine Server", "Spielstände bleiben auf deinem Gerät. Wir betreiben keine eigenen Server und sammeln nichts ein."),
-        ("Drei Sprachen, ein Katalog", "Deutsch, Englisch und Spanisch – jede Frage in jeder Sprache eigens formuliert und geprüft."),
+        ("Vier Sprachen, ein Katalog", "Deutsch, Englisch, Spanisch und Französisch – jede Frage in jeder Sprache eigens formuliert und geprüft."),
         ("Für Kinder werbefrei", "Quizerra Kids kommt ohne Werbung und Tracking aus. Alles, was Geld kostet, liegt hinter einer Elternsicherung."),
     ],
 
@@ -55,12 +55,12 @@ T = {
 
     # Quizerra
     "q_page_title": "Quizerra – Wissensquiz gegen die Zeit",
-    "q_desc": "Quizerra ist ein schnelles Wissensquiz für iPhone und iPad: 1.100 Fragen in 11 Kategorien, zwei Minuten pro Runde, tägliche Challenge, 55 Embleme zum Sammeln. Kostenlos, in Deutsch, Englisch und Spanisch.",
+    "q_desc": "Quizerra ist ein schnelles Wissensquiz für iPhone und iPad: 1.100 Fragen in 11 Kategorien, zwei Minuten pro Runde, tägliche Challenge, 55 Embleme zum Sammeln. Kostenlos, in Deutsch, Englisch, Spanisch und Französisch.",
     "q_subtitle": "Wissensquiz gegen die Zeit",
     "q_teaser": "Wähle eine Kategorie und beantworte in zwei Minuten so viele Fragen wie möglich. Jede richtige Antwort bringt Punkte, Serien bringen Bonus.",
     "q_lead": "Wie viel weißt du wirklich? Finde es in zwei Minuten heraus – mit 1.100 Fragen aus 11 Kategorien, für alle, die gern nachdenken, dazulernen und ihren Highscore knacken.",
-    "q_facts": ["1.100 Fragen", "11 Kategorien", "3 Sprachen", "Kostenlos"],
-    "q_stats": [("1.100", "Fragen"), ("11", "Kategorien"), ("2 Min", "pro Runde"), ("3", "Sprachen")],
+    "q_facts": ["1.100 Fragen", "11 Kategorien", "4 Sprachen", "Kostenlos"],
+    "q_stats": [("1.100", "Fragen"), ("11", "Kategorien"), ("2 Min", "pro Runde"), ("4", "Sprachen")],
     "q_shot_alt": "Quizerra-Hauptmenü mit Kategorien, Level-Anzeige und täglicher Challenge",
     "q_how_eyebrow": "So wird gespielt",
     "q_how_title": "Zwei Minuten, volle Konzentration",
