@@ -1,5 +1,5 @@
 """Ratgeber-Seiten: hilfreiche Inhalte für Suchende, die zu einer App passen – ohne Fragen oder
-Antworten aus den Apps preiszugeben. Inhalt je Sprache (DE/EN/ES)."""
+Antworten aus den Apps preiszugeben. Inhalt je Sprache (DE/EN/ES/FR)."""
 
 GUIDE_KIDS = {
     "de": {
@@ -160,6 +160,59 @@ GUIDE_KIDS = {
              "Gratis no significa que nadie pague: muchas apps gratuitas se financian con publicidad o con datos. Las apps sin anuncios con una compra única detrás de un control parental suelen ser la mejor opción para los niños."),
             ("¿Cómo sé si una app recopila datos?",
              "Por el apartado «Privacidad de la app» de su página en el App Store y por la política de privacidad del desarrollador. Si pone «No se recopilan datos», o si la app funciona sin cuenta y sin conexión, es buena señal."),
+        ],
+    },
+    "fr": {
+        "page_title": "Apps de quiz pour enfants : ce que les parents doivent vérifier – SevenFoxes Games",
+        "desc": "Publicité, achats intégrés, confidentialité, tranches d’âge : les points essentiels qui permettent aux parents de reconnaître une bonne app de quiz pour enfants – avec une liste de contrôle et les réglages à faire sur l’iPhone.",
+        "eyebrow": "Guide pour les parents",
+        "title": "Apps de quiz pour enfants : ce que les parents doivent vérifier",
+        "lead": "Un bon quiz éveille la curiosité des enfants et exerce, sans qu’ils s’en rendent compte, leurs connaissances et leur lecture. Mais toute app qui ressemble à un jeu éducatif n’est pas forcément un bon choix pour les enfants. Ces points vous aident à trouver une app adaptée en quelques minutes.",
+        "meta": "Temps de lecture : environ 5 minutes · Mise à jour : octobre 2026",
+        "check_title": "La liste de contrôle",
+        "check_intro": "Si une app répond bien à ces sept questions, vous pouvez laisser votre enfant jouer en toute tranquillité.",
+        "checks": [
+            ("L’app affiche-t-elle de la publicité ?",
+             "La publicité distrait, fait sortir de l’app d’un simple toucher et n’est souvent pas reconnue comme telle par les enfants. L’App Store ne prévoit pas de mention spécifique pour la publicité, mais la section « Confidentialité de l’app » donne un indice : si l’on y trouve « Publicité de tiers » comme finalité, l’app affiche de la publicité. Un coup d’œil aux avis le révèle généralement aussi très vite."),
+            ("Comment fonctionnent les achats ?",
+             "Beaucoup d’apps gratuites gagnent de l’argent grâce aux achats intégrés. L’essentiel est que votre enfant ne puisse pas acheter par inadvertance : les achats doivent être protégés par un contrôle parental, par exemple une opération de calcul que les enfants d’âge préscolaire ne savent pas résoudre. Les achats uniques sont généralement plus équitables que les abonnements, parce que rien ne continue de tourner à votre insu."),
+            ("Quelles données l’app collecte-t-elle ?",
+             "Chaque page d’app de l’App Store comporte une section « Confidentialité de l’app ». Elle indique quelles données sont collectées et si elles servent au suivi. Pour les apps destinées aux enfants, la règle est simple : le moins possible. Une app qui n’exige aucun compte et fonctionne hors ligne a presque toujours l’avantage sur ce point."),
+            ("L’app convient-elle à l’âge de mon enfant ?",
+             "La classification par âge de l’App Store (4+, 9+, 13+ …) indique seulement si les contenus sont sans risque – pas s’ils correspondent au niveau de connaissances. Les bons quiz pour enfants distinguent plusieurs tranches d’âge, pour qu’un enfant de six ans ne bute pas sur des questions destinées à des enfants de douze ans et que les plus grands ne s’ennuient pas."),
+            ("Mon enfant peut-il déjà jouer seul ?",
+             "Pour les lecteurs débutants, une fonction de lecture à voix haute vaut de l’or : un bouton lit la question, et l’enfant peut quand même répondre de façon autonome. Sans elle, le quiz devient vite une tâche pour les parents."),
+            ("Comment l’app motive-t-elle ?",
+             "Les récompenses à collectionner, comme les autocollants ou les badges, motivent bien. Méfiez-vous des mécanismes qui créent de la pression : limites de temps qui poussent à l’achat, coffres surprise proches des jeux de hasard ou messages du type « Tu vas perdre ta série ! ». Les mauvaises réponses doivent être corrigées avec bienveillance, pas sanctionnées."),
+            ("L’app figure-t-elle dans la catégorie « Enfants » ?",
+             "Les apps de la catégorie « Enfants » de l’App Store doivent respecter des règles plus strictes : en principe aucun service de publicité ni d’analyse de tiers, et des achats ou des liens vers l’extérieur uniquement derrière un contrôle parental. Ce n’est pas un label de qualité pour les contenus, mais c’est un bon indice d’une démarche adaptée aux enfants."),
+        ],
+        "settings_title": "En complément : les bons réglages sur l’iPhone et l’iPad",
+        "settings": [
+            "<strong>Activer « Demande d’achat » :</strong> avec le Partage familial, vous pouvez exiger que les enfants demandent la permission avant chaque achat.",
+            "<strong>Bloquer les achats intégrés :</strong> dans <em>Réglages → Temps d’écran → Restrictions relatives au contenu et à la confidentialité → Achats dans l’iTunes Store et l’App Store</em>, vous pouvez désactiver complètement les achats intégrés.",
+            "<strong>Fixer un temps d’écran :</strong> avec les limites d’app, vous déterminez combien de temps par jour les jeux peuvent être utilisés – indépendamment de ce que l’app prévoit elle-même.",
+            "<strong>Commencer ensemble :</strong> jouez les premières parties avec votre enfant. Vous verrez ainsi par vous-même comment l’app réagit aux erreurs et si les questions conviennent.",
+        ],
+        "example_eyebrow": "Un exemple",
+        "example_title": "Comment nous appliquons ces principes dans Quizerra Kids",
+        "example_intro": "Nous avons conçu Quizerra Kids précisément selon ces points – et nous disons aussi franchement où l’app gagne de l’argent :",
+        "example": [
+            "Pas de publicité, pas de suivi, pas d’outils d’analyse – l’app figure dans la catégorie « Enfants » de l’App Store",
+            "Pas de compte, pas d’inscription ; l’app fonctionne entièrement hors ligne",
+            "Deux tranches d’âge (6 à 8 ans et 9 à 12 ans) avec un bouton de lecture à voix haute pour les lecteurs débutants",
+            "Des autocollants pour l’album en récompense, des réactions bienveillantes aux mauvaises réponses",
+            "Quatre catégories sont gratuites de façon permanente ; les autres se débloquent par un achat unique – uniquement derrière un contrôle parental",
+        ],
+        "example_more": "En savoir plus sur Quizerra Kids",
+        "faq_title": "Questions fréquentes",
+        "faq": [
+            ("À partir de quel âge les apps de quiz ont-elles un sens ?",
+             "Dès que les enfants savent se repérer avec des images, des symboles et des questions lues à voix haute – généralement vers cinq ou six ans. Grâce à la fonction de lecture à voix haute, les enfants qui ne lisent pas encore couramment peuvent aussi participer."),
+            ("Les apps gratuites pour enfants sont-elles sans risque ?",
+             "Gratuit ne veut pas dire que personne ne paie : beaucoup d’apps gratuites se financent par la publicité ou par les données. Les apps sans publicité, avec un achat unique derrière un contrôle parental, sont généralement le meilleur choix pour les enfants."),
+            ("Comment savoir si une app collecte des données ?",
+             "Grâce à la section « Confidentialité de l’app » sur la page de l’app dans l’App Store et à la politique de confidentialité de l’éditeur. Si l’on y lit « Données non collectées », ou si l’app fonctionne sans compte et hors ligne, c’est bon signe."),
         ],
     },
 }

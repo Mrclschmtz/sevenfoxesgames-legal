@@ -9,7 +9,7 @@ fertigen HTML-Dateien ins Repo-Wurzelverzeichnis, das GitHub Pages ausliefert.
 Die generierten Dateien werden mit eingecheckt – Pages baut nichts selbst
 (.nojekyll), es gibt also keinen Build-Schritt auf GitHub-Seite.
 
-Sprachen: Deutsch liegt in der Wurzel, Englisch unter /en/, Spanisch unter /es/.
+Sprachen: Deutsch liegt in der Wurzel, Englisch unter /en/, Spanisch unter /es/, Französisch unter /fr/ (seit 16.10.2026).
 Die Datenschutz-URLs /quizerra/, /quizerra-kids/ und /bumblossom/ sind in der veröffentlichten
 App, in App Store Connect und bei AdMob hinterlegt und dürfen sich NICHT ändern.
 """
@@ -23,34 +23,34 @@ sys.path.insert(0, str(SITE))
 
 import pages  # noqa: E402  (liegt in site/)
 
-LANGS = ("de", "en", "es")
+LANGS = ("de", "en", "es", "fr")
 # Cache-Buster für site.css (GitHub Pages cached Assets 10 Min.) – bei CSS-Änderungen hochzählen.
-CSS_VERSION = "20261016a"
+CSS_VERSION = "20261016b"
 BASE_URL = "https://sevenfoxes.de"
 
 # Seitenschlüssel → Pfad je Sprache (immer mit abschließendem Slash, "" = Wurzel).
 SLUGS = {
-    "home":          {"de": "",               "en": "en/",                "es": "es/"},
-    "apps":          {"de": "apps/",          "en": "en/apps/",           "es": "es/apps/"},
-    "quizerra":      {"de": "apps/quizerra/", "en": "en/apps/quizerra/",  "es": "es/apps/quizerra/"},
-    "kids":          {"de": "apps/quizerra-kids/", "en": "en/apps/quizerra-kids/", "es": "es/apps/quizerra-kids/"},
-    "bumblossom":    {"de": "apps/bumblossom/", "en": "en/apps/bumblossom/", "es": "es/apps/bumblossom/"},
-    "contact":       {"de": "kontakt/",       "en": "en/contact/",        "es": "es/contacto/"},
-    "imprint":       {"de": "impressum/",     "en": "en/legal-notice/",   "es": "es/aviso-legal/"},
-    "privacy":       {"de": "datenschutz/",   "en": "en/privacy/",        "es": "es/privacidad/"},
+    "home":          {"de": "",               "en": "en/",                "es": "es/",                "fr": "fr/"},
+    "apps":          {"de": "apps/",          "en": "en/apps/",           "es": "es/apps/",           "fr": "fr/apps/"},
+    "quizerra":      {"de": "apps/quizerra/", "en": "en/apps/quizerra/",  "es": "es/apps/quizerra/",  "fr": "fr/apps/quizerra/"},
+    "kids":          {"de": "apps/quizerra-kids/", "en": "en/apps/quizerra-kids/", "es": "es/apps/quizerra-kids/", "fr": "fr/apps/quizerra-kids/"},
+    "bumblossom":    {"de": "apps/bumblossom/", "en": "en/apps/bumblossom/", "es": "es/apps/bumblossom/", "fr": "fr/apps/bumblossom/"},
+    "contact":       {"de": "kontakt/",       "en": "en/contact/",        "es": "es/contacto/",       "fr": "fr/contact/"},
+    "imprint":       {"de": "impressum/",     "en": "en/legal-notice/",   "es": "es/aviso-legal/",    "fr": "fr/mentions-legales/"},
+    "privacy":       {"de": "datenschutz/",   "en": "en/privacy/",        "es": "es/privacidad/",     "fr": "fr/confidentialite/"},
     # Die App-Rechtstexte sind dreisprachig in EINEM Dokument (Sprachanker #de/#en/#es).
     # Die Kopien unter /en/ und /es/ tragen nur die Navigation in der jeweiligen Sprache;
     # kanonisch bleibt die Wurzel-URL.
-    "legal-quizerra": {"de": "quizerra/",      "en": "en/quizerra/",       "es": "es/quizerra/"},
-    "legal-kids":     {"de": "quizerra-kids/", "en": "en/quizerra-kids/",  "es": "es/quizerra-kids/"},
-    "legal-bumblossom": {"de": "bumblossom/",  "en": "en/bumblossom/",     "es": "es/bumblossom/"},
+    "legal-quizerra": {"de": "quizerra/",      "en": "en/quizerra/",       "es": "es/quizerra/",       "fr": "fr/quizerra/"},
+    "legal-kids":     {"de": "quizerra-kids/", "en": "en/quizerra-kids/",  "es": "es/quizerra-kids/",  "fr": "fr/quizerra-kids/"},
+    "legal-bumblossom": {"de": "bumblossom/",  "en": "en/bumblossom/",     "es": "es/bumblossom/",     "fr": "fr/bumblossom/"},
     # Ziel der Duell-Einladung aus der Quizerra-App (DuelInvite.swift, ?c=<Code>) – Pfade nicht ändern.
-    "duel":           {"de": "duell/",         "en": "en/duel/",           "es": "es/duelo/"},
+    "duel":           {"de": "duell/",         "en": "en/duel/",           "es": "es/duelo/",          "fr": "fr/duel/"},
     # Ratgeber (site/guides.py)
     "guide-kids":     {"de": "ratgeber/quiz-apps-fuer-kinder/", "en": "en/guides/quiz-apps-for-kids/",
-                       "es": "es/guias/apps-de-preguntas-para-ninos/"},
+                       "es": "es/guias/apps-de-preguntas-para-ninos/", "fr": "fr/guides/apps-quiz-pour-enfants/"},
     # 404: GitHub Pages liefert bei unbekannten Pfaden genau EINE Datei, /404.html (alle Sprachen darin, noindex).
-    "notfound":       {"de": "404.html", "en": "404.html", "es": "404.html"},
+    "notfound":       {"de": "404.html", "en": "404.html", "es": "404.html", "fr": "404.html"},
 }
 CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
 # Seiten ohne Launch-Banner und ohne Sitemap-Eintrag (noindex): nur über einen geteilten Link erreichbar.
@@ -77,8 +77,8 @@ def nav_html(t, lang, current):
 
 
 def langswitch_html(key, lang):
-    names = {"de": "DE", "en": "EN", "es": "ES"}
-    full = {"de": "Deutsch", "en": "English", "es": "Español"}
+    names = {"de": "DE", "en": "EN", "es": "ES", "fr": "FR"}
+    full = {"de": "Deutsch", "en": "English", "es": "Español", "fr": "Français"}
     out = []
     for l in LANGS:
         href = url(key, l)

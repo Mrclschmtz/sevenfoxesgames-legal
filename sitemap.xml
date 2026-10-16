@@ -5,179 +5,272 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/apps/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/apps/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/apps/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/apps/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/apps/quizerra/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/apps/quizerra/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/apps/quizerra/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/apps/quizerra/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/apps/quizerra-kids/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra-kids/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/apps/quizerra-kids/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra-kids/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/apps/quizerra-kids/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra-kids/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/apps/quizerra-kids/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/quizerra-kids/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/apps/bumblossom/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/bumblossom/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/apps/bumblossom/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/bumblossom/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/apps/bumblossom/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/bumblossom/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/apps/bumblossom/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/apps/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/apps/bumblossom/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/kontakt/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/kontakt/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/contact/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/contact/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/kontakt/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/contact/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/contacto/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/kontakt/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/contact/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/contact/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/impressum/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/impressum/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/mentions-legales/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/legal-notice/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/impressum/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/mentions-legales/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/aviso-legal/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/impressum/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/legal-notice/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/mentions-legales/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/mentions-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/mentions-legales/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/datenschutz/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/datenschutz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/confidentialite/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/datenschutz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/confidentialite/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/privacidad/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/datenschutz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/confidentialite/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/quizerra/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/quizerra/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/quizerra/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/quizerra/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/quizerra-kids/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/quizerra-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/quizerra-kids/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/quizerra-kids/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/bumblossom/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/bumblossom/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/bumblossom/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/bumblossom/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/guides/apps-quiz-pour-enfants/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/en/guides/quiz-apps-for-kids/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/guides/apps-quiz-pour-enfants/"/>
   </url>
   <url>
     <loc>https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/guides/apps-quiz-pour-enfants/"/>
+  </url>
+  <url>
+    <loc>https://sevenfoxes.de/fr/guides/apps-quiz-pour-enfants/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sevenfoxes.de/ratgeber/quiz-apps-fuer-kinder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sevenfoxes.de/en/guides/quiz-apps-for-kids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sevenfoxes.de/es/guias/apps-de-preguntas-para-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sevenfoxes.de/fr/guides/apps-quiz-pour-enfants/"/>
   </url>
 </urlset>

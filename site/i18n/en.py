@@ -197,11 +197,11 @@ T = {
     ],
 
     "legal_q_title": "Quizerra – privacy policy & legal notice",
-    "legal_q_desc": "Privacy policy and legal notice of the iOS app Quizerra – Deutsch, English, Español.",
+    "legal_q_desc": "Privacy policy and legal notice of the iOS app Quizerra – Deutsch, English, Español, Français.",
     "legal_k_title": "Quizerra Kids – privacy policy & legal notice",
-    "legal_k_desc": "Privacy policy and legal notice of the iOS app Quizerra Kids – Deutsch, English, Español.",
+    "legal_k_desc": "Privacy policy and legal notice of the iOS app Quizerra Kids – Deutsch, English, Español, Français.",
     "legal_b_title": "Bumblossom – privacy policy & legal notice",
-    "legal_b_desc": "Privacy policy and legal notice of the iOS app Bumblossom – Deutsch, English, Español.",
+    "legal_b_desc": "Privacy policy and legal notice of the iOS app Bumblossom – Deutsch, English, Español, Français.",
 
     # Bumblossom – product page
     "b_soon": "On the App Store from October 1",

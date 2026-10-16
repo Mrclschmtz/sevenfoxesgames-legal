@@ -207,11 +207,11 @@ T = {
 
     # App-Rechtstexte (Titel der eingebetteten Seiten)
     "legal_q_title": "Quizerra – Datenschutzerklärung & Impressum",
-    "legal_q_desc": "Datenschutzerklärung und Impressum der iOS-App Quizerra – Deutsch, English, Español.",
+    "legal_q_desc": "Datenschutzerklärung und Impressum der iOS-App Quizerra – Deutsch, English, Español, Français.",
     "legal_k_title": "Quizerra Kids – Datenschutzerklärung & Impressum",
-    "legal_k_desc": "Datenschutzerklärung und Impressum der iOS-App Quizerra Kids – Deutsch, English, Español.",
+    "legal_k_desc": "Datenschutzerklärung und Impressum der iOS-App Quizerra Kids – Deutsch, English, Español, Français.",
     "legal_b_title": "Bumblossom – Datenschutzerklärung & Impressum",
-    "legal_b_desc": "Datenschutzerklärung und Impressum der iOS-App Bumblossom – Deutsch, English, Español.",
+    "legal_b_desc": "Datenschutzerklärung und Impressum der iOS-App Bumblossom – Deutsch, English, Español, Français.",
 
     # Bumblossom – Produktseite
     "b_soon": "Ab 1. Oktober im App Store",

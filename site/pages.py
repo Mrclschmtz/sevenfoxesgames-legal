@@ -566,7 +566,7 @@ def page_legal(app, t, lang, url):
     content = f'''
 <section class="section wrap legal">
   <p class="brand-line">{word}</p>
-  <p class="lang-switch"><a href="#de" hreflang="de">Deutsch</a> <a href="#en" hreflang="en">English</a> <a href="#es" hreflang="es">Español</a>{' <a href="#fr" hreflang="fr">Français</a>' if app == "quizerra-kids" else ''}</p>
+  <p class="lang-switch"><a href="#de" hreflang="de">Deutsch</a> <a href="#en" hreflang="en">English</a> <a href="#es" hreflang="es">Español</a> <a href="#fr" hreflang="fr">Français</a></p>
 {body}
 </section>'''
     return dict(title=title, description=desc, world="studio", content=content)
@@ -664,7 +664,7 @@ def page_notfound(url):
     """404-Seite: EINE Datei für alle Sprachen (GitHub Pages liefert nur /404.html). Alle drei Fassungen
     stehen im HTML; ein kleines Skript blendet die Fassung zum Pfad (/en/…, /es/…) ein, sonst Deutsch."""
     blocks = []
-    for lang in ("de", "en", "es"):
+    for lang in ("de", "en", "es", "fr"):
         t = importlib.import_module(f"i18n.{lang}").T
         answers = [("A", t["nf_a"], t["nf_a_sub"], url("home", lang)),
                    ("B", t["nf_b"], t["nf_b_sub"], url("apps", lang)),
@@ -685,7 +685,7 @@ def page_notfound(url):
     content = f'''
 <div class="hero nf-hero wrap" aria-hidden="true">{hero_pixels(seed=404, count=22)}</div>
 {"".join(blocks)}
-<script>(function(){{var m=location.pathname.match(/^\/(en|es)(\/|$)/),l=m?m[1]:"de";
+<script>(function(){{var m=location.pathname.match(/^\\/(en|es|fr)(\\/|$)/),l=m?m[1]:"de";
 document.querySelectorAll(".nf").forEach(function(s){{s.hidden=s.dataset.lang!==l;}});document.documentElement.lang=l;}})();</script>'''
     t = importlib.import_module("i18n.de").T
     return dict(title=t["nf_page_title"], description=t["nf_desc"], world="studio", content=content, robots="noindex")
