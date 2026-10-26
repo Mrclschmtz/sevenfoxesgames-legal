@@ -691,6 +691,126 @@ document.querySelectorAll(".nf").forEach(function(s){{s.hidden=s.dataset.lang!==
     return dict(title=t["nf_page_title"], description=t["nf_desc"], world="studio", content=content, robots="noindex")
 
 
+
+PRESS_KIDS_QUESTIONS = 800   # bei Kids 1.3 (Weltreise) auf 880 und die Kategorien auf 11 setzen, zusammen mit dem Store-Update
+PRESS_KIDS_CATEGORIES = 10
+PRESS_DIR = "/assets/press/quizerra-kids"
+
+PRESS_TEXT = {
+    "de": dict(
+        title="Presse – Quizerra Kids", desc="Pressematerial, Fakten und Kontakt zu Quizerra Kids, dem werbefreien Quizspiel für Kinder von 6 bis 12 Jahren.",
+        eyebrow="Presse", lead="Ein Quizspiel für Kinder von 6 bis 12 Jahren: ohne Werbung, ohne Tracking, ohne Abo.",
+        about_h="Kurzbeschreibung",
+        about=("Quizerra Kids ist ein Quizspiel für iPhone und iPad. Kinder beantworten in zwei Minuten so viele Fragen wie möglich, "
+               "bekommen für richtige Antworten Sticker und kleben sie in ein Stickerheft. Das Spiel hat {q} kindgerecht formulierte Fragen "
+               "in {c} Kategorien und zwei Altersstufen (6 bis 8 Jahre mit Vorlesefunktion, 9 bis 12 Jahre), auf Deutsch, Englisch, Spanisch und Französisch. "
+               "Vier Kategorien sind dauerhaft kostenlos, weitere gibt es als Einmalkauf, nie als Abo. Die App kommt ohne Werbung, ohne Tracking und ohne Konto aus."),
+        facts_h="Fakten auf einen Blick",
+        facts=[("Plattform", "iPhone und iPad (iOS 17 oder neuer), läuft komplett offline"),
+               ("Preis", "gratis; vier Kategorien dauerhaft kostenlos, weitere je 0,99 € oder alle für 4,99 € (Einmalkäufe, kein Abo)"),
+               ("Alter", "Kinder von 6 bis 12 Jahren; Altersfreigabe 4+, Kids-Kategorie im App Store"),
+               ("Sprachen", "Deutsch, Englisch, Spanisch, Französisch"),
+               ("Inhalt", "{q} Fragen, {c} Kategorien, 2 Altersstufen, Stickerheft, Tages-Challenge, Statistik"),
+               ("Datenschutz", "Im App Store: „Es werden keine Daten erfasst“. Keine Werbung, keine Analyse-Dienste, kein Konto"),
+               ("Erschienen", "5. Oktober 2026"),
+               ("Hersteller", "SevenFoxes Games, Marcel Krause")],
+        parents_h="Was Eltern wissen wollen",
+        parents=["Keine Werbung, kein Tracking, keine Analyse-Dienste, kein Konto, keine Registrierung",
+                 "Alle Käufe und der einzige externe Link liegen hinter einer Elternsicherung (kleine Rechenaufgabe)",
+                 "Einmalkäufe statt Abo: Gekauft ist für immer gekauft",
+                 "Fehler tun nicht weh: Eule Ella zeigt freundlich die richtige Antwort, es gibt keinen Zeitdruck-Alarm und keine Bestrafung",
+                 "Die Vorlesefunktion (Stufe 6 bis 8) läuft auf dem Gerät und hilft Leseanfängern, allein zu spielen"],
+        material_h="Pressematerial", material_note="Alle Bilder dürfen im Zusammenhang mit der Berichterstattung über Quizerra Kids frei verwendet werden.",
+        zip="Gesamtpaket herunterladen (ZIP, Icon, Eule Ella, Screenshots in Deutsch und Englisch)",
+        icon="App-Symbol (1024 × 1024)", ella="Eule Ella (Maskottchen, drei Posen, transparent)", shots="Screenshots (Deutsch)", shots_en="Screenshots (Englisch)",
+        test_h="Zum Ausprobieren", test="Für Besprechungen schicken wir auf Anfrage Gutscheincodes, mit denen sich alle Kategorien kostenlos freischalten lassen.",
+        contact_h="Pressekontakt", contact="Marcel Krause, SevenFoxes Games. Wir antworten in der Regel innerhalb von zwei Werktagen.",
+        links_h="Weiterführende Links", app="Quizerra Kids im App Store", page="Produktseite", privacy="Datenschutzerklärung",
+        studio_h="Über SevenFoxes Games", studio="SevenFoxes Games ist ein kleines, unabhängiges Studio. Wir bauen Spiele, die wir selbst gern spielen: schnell zu starten, ohne Anmeldung, ohne Wartezeiten und ohne Tricks, die einen länger festhalten sollen, als man möchte."),
+    "en": dict(
+        title="Press – Quizerra Kids", desc="Press material, facts and contact for Quizerra Kids, the ad-free quiz game for children aged 6 to 12.",
+        eyebrow="Press", lead="A quiz game for children aged 6 to 12: no ads, no tracking, no subscription.",
+        about_h="Short description",
+        about=("Quizerra Kids is a quiz game for iPhone and iPad. Children answer as many questions as they can in two minutes, earn stickers for correct answers "
+               "and stick them into a sticker book. The game has {q} kid-friendly questions in {c} categories and two age levels (ages 6 to 8 with read-aloud, ages 9 to 12), "
+               "in German, English, Spanish and French. Four categories are free forever, more can be unlocked with one-time purchases, never with a subscription. "
+               "The app has no ads, no tracking and no account."),
+        facts_h="Facts at a glance",
+        facts=[("Platform", "iPhone and iPad (iOS 17 or later), works completely offline"),
+               ("Price", "free; four categories free forever, more at €0.99 each or all for €4.99 (one-time purchases, no subscription)"),
+               ("Age", "children aged 6 to 12; age rating 4+, Kids category on the App Store"),
+               ("Languages", "German, English, Spanish, French"),
+               ("Content", "{q} questions, {c} categories, 2 age levels, sticker book, daily challenge, statistics"),
+               ("Privacy", "App Store privacy label: “Data Not Collected”. No ads, no analytics, no account"),
+               ("Released", "October 5, 2026"),
+               ("Publisher", "SevenFoxes Games, Marcel Krause")],
+        parents_h="What parents want to know",
+        parents=["No ads, no tracking, no analytics, no account, no sign-up",
+                 "All purchases and the only external link sit behind a parental gate (a small multiplication task)",
+                 "One-time purchases instead of a subscription: bought is bought for good",
+                 "Mistakes do not hurt: Ella the owl kindly shows the right answer, with no time-pressure alarms and no punishment",
+                 "The read-aloud feature (ages 6 to 8) runs on the device and helps early readers play on their own"],
+        material_h="Press material", material_note="All images may be used freely in connection with coverage of Quizerra Kids.",
+        zip="Download everything (ZIP: icon, Ella the owl, screenshots in German and English)",
+        icon="App icon (1024 × 1024)", ella="Ella the owl (mascot, three poses, transparent)", shots="Screenshots (German)", shots_en="Screenshots (English)",
+        test_h="Try it", test="For reviews we send promo codes on request that unlock all categories for free.",
+        contact_h="Press contact", contact="Marcel Krause, SevenFoxes Games. We usually reply within two working days.",
+        links_h="Links", app="Quizerra Kids on the App Store", page="Product page", privacy="Privacy policy",
+        studio_h="About SevenFoxes Games", studio="SevenFoxes Games is a small, independent studio. We build games we like to play ourselves: quick to start, no sign-up, no waiting, and no tricks designed to keep you hooked longer than you want to be."),
+}
+
+
+def page_press(t, lang, url):
+    """Presseseite zu Quizerra Kids (unlisted, noindex). Deutsch und Englisch; es/fr zeigen den englischen Text."""
+    P = PRESS_TEXT["de" if lang == "de" else "en"]
+    sub = dict(q=PRESS_KIDS_QUESTIONS, c=PRESS_KIDS_CATEGORIES)
+    facts_rows = "".join(f"<li><b>{k}:</b> {v.format(**sub)}</li>" for k, v in P["facts"])
+    parents = "".join(f"<li>{x}</li>" for x in P["parents"])
+    def files(folder, prefix, label):
+        names = ["01-menu", "02-ageselect", "03-gameplay", "04-album", "05-results"]
+        items = "".join(f'<li><a href="{PRESS_DIR}/{folder}/quizerra-kids-{prefix}-{n}.jpg" download>{n}</a></li>' for n in names)
+        return f"<p><b>{label}</b></p><ul class=\"topics\">{items}</ul>"
+    ella = "".join(f'<li><a href="{PRESS_DIR}/ella-{n}.png" download>ella-{n}.png</a></li>' for n in ("happy", "cheer", "think"))
+    previews = gallery("kids", "de" if lang == "de" else "en", ["01-menu", "03-gameplay", "04-album", "05-results"],
+                       [P["shots"]] * 4)
+    body = f'''
+<section class="section wrap narrow">
+  <p class="eyebrow">{P["eyebrow"]}</p>
+  <div class="app-name"><img src="/assets/img/kids/icon.png" alt="" width="64" height="64"><h1>{kids_word()}</h1></div>
+  <p class="lead" style="margin-top:12px">{P["lead"]}</p>
+  <div class="actions" style="margin:18px 0">{store_button(t, APP_STORE_KIDS)}</div>
+  {previews}
+  <h2 style="font-size:1.3rem">{P["about_h"]}</h2>
+  <p>{P["about"].format(**sub)}</p>
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["facts_h"]}</h2>
+  <ul class="topics">{facts_rows}</ul>
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["parents_h"]}</h2>
+  <ul class="topics">{parents}</ul>
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["material_h"]}</h2>
+  <p class="muted">{P["material_note"]}</p>
+  <p><a class="btn btn-accent" href="/assets/press/quizerra-kids-pressekit.zip" download>{P["zip"]}</a></p>
+  <p><b>{P["icon"]}</b>: <a href="{PRESS_DIR}/quizerra-kids-icon-1024.png" download>quizerra-kids-icon-1024.png</a></p>
+  <p><b>{P["ella"]}</b></p><ul class="topics">{ella}</ul>
+  {files("screenshots-de", "de", P["shots"])}
+  {files("screenshots-en", "en", P["shots_en"])}
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["test_h"]}</h2>
+  <p>{P["test"]}</p>
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["contact_h"]}</h2>
+  <p>{P["contact"]}</p>
+  {address_box(t)}
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["links_h"]}</h2>
+  <ul class="topics"><li><a href="{APP_STORE_KIDS}" rel="noopener">{P["app"]}</a></li>
+  <li><a href="{url("kids", lang)}">{P["page"]}</a></li>
+  <li><a href="{url("legal-kids", lang)}#{lang if lang in ("de","en") else "en"}">{P["privacy"]}</a></li></ul>
+  <h2 style="font-size:1.3rem;margin-top:30px">{P["studio_h"]}</h2>
+  <p>{P["studio"]}</p>
+</section>'''
+    if lang in ("es", "fr"):
+        body = f'<div lang="en">{body}</div>'
+    return dict(title=P["title"], description=P["desc"], world="sky", content=body, robots="noindex",
+                og_image="/assets/img/kids/icon.png")
+
+
 def render(key, lang, t, url):
     if key == "home":
         return page_home(t, lang, url)
@@ -718,6 +838,8 @@ def render(key, lang, t, url):
         return page_duel(t, lang, url)
     if key == "guide-kids":
         return page_guide_kids(t, lang, url)
+    if key == "press":
+        return page_press(t, lang, url)
     if key == "notfound":
         return page_notfound(url)
     raise KeyError(key)

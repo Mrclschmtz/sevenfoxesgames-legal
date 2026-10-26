@@ -49,12 +49,14 @@ SLUGS = {
     # Ratgeber (site/guides.py)
     "guide-kids":     {"de": "ratgeber/quiz-apps-fuer-kinder/", "en": "en/guides/quiz-apps-for-kids/",
                        "es": "es/guias/apps-de-preguntas-para-ninos/", "fr": "fr/guides/apps-quiz-pour-enfants/"},
+    # Presseseite zu Quizerra Kids (unlisted, noindex): site/pages.py page_press
+    "press":          {"de": "presse/", "en": "en/press/", "es": "es/press/", "fr": "fr/press/"},
     # 404: GitHub Pages liefert bei unbekannten Pfaden genau EINE Datei, /404.html (alle Sprachen darin, noindex).
     "notfound":       {"de": "404.html", "en": "404.html", "es": "404.html", "fr": "404.html"},
 }
 CANONICAL_LANG = {"legal-quizerra": "de", "legal-kids": "de", "legal-bumblossom": "de"}
 # Seiten ohne Launch-Banner und ohne Sitemap-Eintrag (noindex): nur über einen geteilten Link erreichbar.
-UNLISTED = {"duel", "notfound"}
+UNLISTED = {"duel", "press", "notfound"}
 COUNTER_SNIPPET = '<script data-goatcounter="https://sevenfoxes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'
 NO_COUNTER = {"legal-kids"}
 
