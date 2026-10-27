@@ -692,8 +692,8 @@ document.querySelectorAll(".nf").forEach(function(s){{s.hidden=s.dataset.lang!==
 
 
 
-PRESS_KIDS_QUESTIONS = 800   # bei Kids 1.3 (Weltreise) auf 880 und die Kategorien auf 11 setzen, zusammen mit dem Store-Update
-PRESS_KIDS_CATEGORIES = 10
+PRESS_KIDS_QUESTIONS = 880   # bei Kids 1.3 (Weltreise) auf 880 und die Kategorien auf 11 setzen, zusammen mit dem Store-Update
+PRESS_KIDS_CATEGORIES = 11
 PRESS_DIR = "/assets/press/quizerra-kids"
 
 PRESS_TEXT = {

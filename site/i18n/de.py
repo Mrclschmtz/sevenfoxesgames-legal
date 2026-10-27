@@ -94,17 +94,17 @@ T = {
 
     # Quizerra Kids
     "k_page_title": "Quizerra Kids – Quiz & Stickerheft für Kinder",
-    "k_desc": "Quizerra Kids ist ein werbefreies Quizspiel für Kinder von 6 bis 12 Jahren: 800 kindgerechte Fragen in zwei Altersstufen, ein Stickerheft zum Sammeln, Vorlese-Funktion, kein Tracking, Käufe nur hinter einer Elternsicherung.",
+    "k_desc": "Quizerra Kids ist ein werbefreies Quizspiel für Kinder von 6 bis 12 Jahren: 880 kindgerechte Fragen in zwei Altersstufen, ein Stickerheft zum Sammeln, Vorlese-Funktion, kein Tracking, Käufe nur hinter einer Elternsicherung.",
     "b_subtitle": "Bienen-Puzzle voller Blüten",
     "b_teaser": "Schick fleißige Bienen aus ihren Stöcken los und lass Knospe für Knospe ein Bild erblühen. Jedes fertige Motiv wandert gepresst ins Herbarium – 400 Beete in 40 Gärten, jeder mit eigenem Look und eigener Musik.",
     "b_facts": ["400 Beete", "40 Gärten", "Herbarium", "Spielbar offline"],
     "b_shot_alt": "Bumblossom: Bienen fliegen in Luftblasen um ein Beet im Unterwassergarten, ein Clownfisch erblüht",
     "b_privacy_link": "Datenschutz",
     "k_subtitle": "Quiz & Stickerheft für Kinder",
-    "k_teaser": "Ella, die neugierige Eule, stellt 800 kindgerechte Fragen in zwei Altersstufen. Für richtige Antworten gibt es Sticker fürs Album – ganz ohne Werbung und Tracking.",
-    "k_lead": "Ella, die neugierige Eule, freut sich auf dich! 800 kindgerecht formulierte Fragen, ein Stickerheft zum Sammeln – und nichts, was Eltern beunruhigen müsste.",
-    "k_facts": ["800 Fragen", "6–12 Jahre", "Werbefrei", "Stickerheft"],
-    "k_stats": [("800", "Fragen"), ("6–12", "Jahre"), ("10", "Kategorien"), ("0", "Werbung")],
+    "k_teaser": "Ella, die neugierige Eule, stellt 880 kindgerechte Fragen in zwei Altersstufen. Für richtige Antworten gibt es Sticker fürs Album – ganz ohne Werbung und Tracking.",
+    "k_lead": "Ella, die neugierige Eule, freut sich auf dich! 880 kindgerecht formulierte Fragen, ein Stickerheft zum Sammeln – und nichts, was Eltern beunruhigen müsste.",
+    "k_facts": ["880 Fragen", "6–12 Jahre", "Werbefrei", "Stickerheft"],
+    "k_stats": [("880", "Fragen"), ("6–12", "Jahre"), ("11", "Kategorien"), ("0", "Werbung")],
     "k_shot_alt": "Quizerra Kids: Stickerheft mit eingeklebten Tier-Stickern",
     "k_soon_note": "Quizerra Kids ist von Apple freigegeben und erscheint am Donnerstag, 8. Oktober 2026 im App Store. Ab dann findest du hier den Link.",
     "k_parents_eyebrow": "Für Eltern",
@@ -130,7 +130,7 @@ T = {
     "k_album_text": "Für richtig beantwortete Fragen gibt es Sticker – fünf pro Kategorie, thematisch passend: ein Gepard, ein T-Rex, eine Rakete, ein Regenbogen und viele mehr. Die Sticker werden ins Album eingeklebt und lassen sich frei auf der Seite verschieben. Jede Kategorie hat ihre eigene, liebevoll gemalte Heftseite.",
     "k_album_alt": "Albumseite Weltraum aus dem Stickerheft von Quizerra Kids",
     "k_categories": ["Tiere", "Dinos & Urzeit", "Weltraum", "Körper & Sinne", "Natur & Wetter", "Technik & Fahrzeuge",
-                     "Mythen & Fabelwesen", "Essen & Trinken", "Sport & Spiele", "Zahlen & Knobeln"],
+                     "Mythen & Fabelwesen", "Essen & Trinken", "Sport & Spiele", "Zahlen & Knobeln", "Weltreise"],
     "k_pricing": "Vier Kategorien sind dauerhaft kostenlos (Körper & Sinne, Technik & Fahrzeuge, Essen & Trinken, Zahlen & Knobeln), dazu die tägliche Challenge mit Fragen aus allen Kategorien. Weitere Kategorien lassen sich einzeln freischalten – oder alles auf einmal, inklusive aller Kategorien, die künftig dazukommen.",
     "k_feat_title": "Immer etwas zu entdecken",
     "k_features": [
@@ -142,7 +142,7 @@ T = {
         ("Statistik", "Trefferquote und gemeisterte Fragen – kindgerecht dargestellt."),
     ],
     "k_gallery_title": "So sieht Quizerra Kids aus",
-    "k_gallery_alts": ["Hauptmenü mit zehn Kategorien", "Ella fragt nach dem Alter", "Laufende Runde mit Frage und Antworten",
+    "k_gallery_alts": ["Hauptmenü mit elf Kategorien", "Ella fragt nach dem Alter", "Laufende Runde mit Frage und Antworten",
                        "Stickerheft mit eingeklebten Stickern", "Ella jubelt beim Ergebnis"],
 
     # Kontakt

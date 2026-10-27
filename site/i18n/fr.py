@@ -94,17 +94,17 @@ T = {
 
     # Quizerra Kids
     "k_page_title": "Quizerra Kids – Quiz & album d’autocollants pour enfants",
-    "k_desc": "Quizerra Kids est un jeu de quiz sans publicité pour les enfants de 6 à 12 ans : 800 questions adaptées aux enfants en deux tranches d’âge, un album d’autocollants à remplir, lecture à voix haute, aucun pistage, achats uniquement derrière un contrôle parental. En français, allemand, anglais et espagnol.",
+    "k_desc": "Quizerra Kids est un jeu de quiz sans publicité pour les enfants de 6 à 12 ans : 880 questions adaptées aux enfants en deux tranches d’âge, un album d’autocollants à remplir, lecture à voix haute, aucun pistage, achats uniquement derrière un contrôle parental. En français, allemand, anglais et espagnol.",
     "b_subtitle": "Un puzzle d’abeilles tout en fleurs",
     "b_teaser": "Envoyez des abeilles diligentes hors de leurs ruches et faites fleurir une image bourgeon après bourgeon. Chaque motif terminé rejoint, pressé, votre herbier – 400 parterres dans 40 jardins, chacun avec son propre style et sa propre musique.",
     "b_facts": ["400 parterres", "40 jardins", "Herbier", "Jouable hors ligne"],
     "b_shot_alt": "Bumblossom : des abeilles dans des bulles d’air tournent autour d’un parterre du jardin sous-marin, un poisson-clown fleurit",
     "b_privacy_link": "Confidentialité",
     "k_subtitle": "Quiz & album d’autocollants pour enfants",
-    "k_teaser": "Ella, la chouette curieuse, pose 800 questions adaptées aux enfants en deux tranches d’âge. Les bonnes réponses rapportent des autocollants pour l’album – sans aucune publicité ni pistage.",
-    "k_lead": "Ella, la chouette curieuse, t’attend avec impatience ! 800 questions formulées pour les enfants, un album d’autocollants à remplir – et rien qui puisse inquiéter les parents.",
-    "k_facts": ["800 questions", "6–12 ans", "Sans publicité", "Album d’autocollants"],
-    "k_stats": [("800", "questions"), ("6–12", "ans"), ("10", "catégories"), ("0", "publicité")],
+    "k_teaser": "Ella, la chouette curieuse, pose 880 questions adaptées aux enfants en deux tranches d’âge. Les bonnes réponses rapportent des autocollants pour l’album – sans aucune publicité ni pistage.",
+    "k_lead": "Ella, la chouette curieuse, t’attend avec impatience ! 880 questions formulées pour les enfants, un album d’autocollants à remplir – et rien qui puisse inquiéter les parents.",
+    "k_facts": ["880 questions", "6–12 ans", "Sans publicité", "Album d’autocollants"],
+    "k_stats": [("880", "questions"), ("6–12", "ans"), ("11", "catégories"), ("0", "publicité")],
     "k_shot_alt": "Quizerra Kids : album d’autocollants avec des autocollants d’animaux collés",
     "k_soon_note": "Quizerra Kids a été approuvé par Apple et sort le jeudi 8 octobre 2026 dans l’App Store. Vous trouverez le lien ici à partir de cette date.",
     "k_parents_eyebrow": "Pour les parents",
@@ -130,7 +130,7 @@ T = {
     "k_album_text": "Les bonnes réponses rapportent des autocollants – cinq par catégorie, en lien avec le thème : un guépard, un T. rex, une fusée, un arc-en-ciel et bien d’autres. Les autocollants sont collés dans l’album et peuvent être déplacés librement sur la page. Chaque catégorie a sa propre page d’album, peinte avec soin.",
     "k_album_alt": "Page Espace de l’album d’autocollants de Quizerra Kids",
     "k_categories": ["Animaux", "Dinos & préhistoire", "Espace", "Corps & sens", "Nature & météo", "Technique & véhicules",
-                     "Mythes & créatures fabuleuses", "Boire & manger", "Sport & jeux", "Chiffres & énigmes"],
+                     "Mythes & créatures fabuleuses", "Boire & manger", "Sport & jeux", "Chiffres & énigmes", "Tour du monde"],
     "k_pricing": "Quatre catégories sont gratuites pour toujours (Corps & sens, Technique & véhicules, Boire & manger, Chiffres & énigmes), ainsi que le défi quotidien avec des questions de toutes les catégories. Les autres catégories se débloquent une par une – ou toutes d’un coup, y compris celles qui viendront s’ajouter à l’avenir.",
     "k_feat_title": "Toujours quelque chose à découvrir",
     "k_features": [
@@ -142,7 +142,7 @@ T = {
         ("Statistiques", "Taux de réussite et questions maîtrisées – présentés de façon adaptée aux enfants."),
     ],
     "k_gallery_title": "Quizerra Kids en images",
-    "k_gallery_alts": ["Menu principal avec dix catégories", "Ella demande l’âge", "Manche en cours avec question et réponses",
+    "k_gallery_alts": ["Menu principal avec onze catégories", "Ella demande l’âge", "Manche en cours avec question et réponses",
                        "Album d’autocollants avec des autocollants collés", "Ella exulte à l’écran des résultats"],
 
     # Kontakt
